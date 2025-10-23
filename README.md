@@ -10,6 +10,6 @@ Former business owner transitioning to Linux infrastructure. I build, break, and
 - Automated backup solutions with rsync & systemd
 
 💻 **Tech Stack:**
-Fedora Asahi Linux | Bash | Git | MariaDB | Apache | Docker (learning)
+Fedora Asahi Linux | Bash | Git | MariaDB | Apache | Docker/Podman (learning)
 
 📫 **Contact:** ch1ch0@duck.com | 📱 Phone: Available upon request | [LinkedIn]
