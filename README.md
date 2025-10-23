@@ -1,16 +1,15 @@
-## Hi there 👋
+# Hi, I'm ch1ch0 👋
 
-<!--
-**ch1ch0-FOSS/ch1ch0-FOSS** is a ✨ _special_ ✨ repository because its `README.md` (this file) appears on your GitHub profile.
+## Linux Systems Administrator | Self-Hosting Enthusiast | Career-Changer
 
-Here are some ideas to get you started:
+Former business owner transitioning to Linux infrastructure. I build, break, and rebuild Linux systems to understand how they really work.
 
-- 🔭 I’m currently working on ...
-- 🌱 I’m currently learning ...
-- 👯 I’m looking to collaborate on ...
-- 🤔 I’m looking for help with ...
-- 💬 Ask me about ...
-- 📫 How to reach me: ...
-- 😄 Pronouns: ...
-- ⚡ Fun fact: ...
--->
+🔧 **Current Projects:**
+- Self-hosted Forgejo Git server on Fedora Asahi
+- Nextcloud with MariaDB backend
+- Automated backup solutions with rsync & systemd
+
+💻 **Tech Stack:**
+Fedora Linux | Bash | Git | MariaDB | Apache | Docker (learning)
+
+📫 **Contact:** Phone # by Request  | ch1ch0@duck.com | [LinkedIn]
