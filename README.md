@@ -1,95 +1,83 @@
 # Hi, I'm ch1ch0 👋
 
-## Linux Systems Administrator | Infrastructure Builder | Career Transitioner
+**Self-taught Linux Systems Architect & FOSS Advocate | Career Transitioner**
 
-Self-taught Linux systems architect building production-grade infrastructure from the ground up. Former business owner leveraging operational experience to master enterprise Linux environments.
+I'm transitioning from health & wellness to Linux infrastructure and DevOps through hands-on system administration, automation, and open-source contributions.
 
-***
+## 🔧 Current Focus
 
-## 🏗️ **Active Infrastructure Projects**
+- Building production Linux infrastructure on Apple Silicon (M1 Mac Mini)
+- Developing vim-first workflows and keyboard-driven productivity tools
+- Automating deployment pipelines (Forgejo → GitHub → Vercel)
+- Self-hosting services (Forgejo, Nextcloud) with security hardening
 
-### **Local-First Development Environment**
+## 🛠️ Tech Stack
 
-**Enterprise Git Infrastructure on Fedora Asahi (Apple M1)**
+**Systems & Infrastructure:**
+- **OS:** Fedora Asahi Remix 42 (Apple Silicon), SELinux enforcing
+- **Window Manager:** Sway (Wayland), vim-universal keybinds
+- **Version Control:** Forgejo (self-hosted), GitHub (public mirrors)
+- **Automation:** Bash/Shell scripting, systemd, cron
+- **Security:** SSH key-only, firewalld, SELinux
 
-- Forgejo Git server with built-in SSH (port 2222) for local-first version control
-- Automated GitHub mirroring for public portfolio visibility
-- FHS-compliant directory structure with audit-ready documentation
-- SELinux-hardened configuration with role-based access control
+**Development:**
+- **Languages:** TypeScript, Python, Shell/Bash
+- **Frontend:** Next.js, React, HTML/CSS
+- **Databases:** MariaDB, PostgreSQL
+- **Tools:** Git, nvim, vifm, tmux, rofi
 
+**Self-Hosted Services:**
+- Forgejo (Git platform)
+- Nextcloud (cloud suite)
+- ollama (LLM tools)
 
-### **Production Services Stack**
+## 📂 Featured Repositories
 
-- **Nextcloud** – Self-hosted cloud storage with MariaDB backend
-- **MariaDB** – Database administration and optimization
-- **Apache/httpd** – Web server configuration and SSL/TLS management
-- **Automated Backups** – rsync + systemd timers for scheduled data protection
+### [ch1ch0.me](https://github.com/ch1ch0-FOSS/ch1ch0.me)
+Personal portfolio with automated deployment pipeline. **Live:** [www.ch1ch0.me](https://www.ch1ch0.me)
+- Next.js 16, TypeScript, Vercel hosting
+- Forgejo → GitHub → Production automation
 
+### [srv-m1m-asahi](https://github.com/ch1ch0-FOSS/srv-m1m-asahi)
+Production Linux infrastructure on Apple Silicon M1. Demonstrates:
+- Security hardening (SELinux, SSH keys, firewalld)
+- Vim-toolkit workflow (nvim, vifm, vimb, tmux, Sway)
+- Self-hosted services (Forgejo, Nextcloud)
+- Checkpoint-driven documentation
 
-### **System Hardening \& Security**
+## 📊 GitHub Stats
 
-- SSH key-based authentication (ed25519) across all services
-- firewalld rule management and port isolation
-- systemd service management and custom unit files
-- Btrfs filesystem with snapshot-based recovery
+![ch1ch0's GitHub stats](https://github-readme-stats.vercel.app/api?username=ch1ch0-FOSS&show_icons=true&theme=dark)
 
-***
+## 🎯 Learning Journey
 
-## 💻 **Technical Skills**
+**Current Checkpoint:** 39 (Portfolio deployment complete)
 
-**Operating Systems:** Fedora Asahi Linux 42 (ARM64), RHEL-family distributions
-**Shell Scripting:** Bash, Zsh (automation, system monitoring, deployment)
-**Version Control:** Git, Forgejo, GitHub workflows, local-first development
-**Databases:** MariaDB administration, backup/restore, optimization
-**Web Stack:** Apache, Nginx (learning), SSL/TLS configuration
-**Containers:** Docker/Podman fundamentals (active learning path)
-**System Administration:** systemd, SELinux, firewalld, user/group management, FHS compliance
-**Networking:** SSH configuration, port forwarding, reverse proxies
+**Recent Milestones:**
+- ✅ Sway + vim-universal toolkit consolidation
+- ✅ Local-first Git workflow with Forgejo
+- ✅ Production site deployment (ch1ch0.me)
+- ✅ Security hardening (SELinux, SSH, firewall)
 
-***
+**Next Goals:**
+- Expand portfolio content (projects, infrastructure)
+- GitHub API integration for repo showcase
+- Advanced automation (CI/CD pipelines)
+- Contribute to FOSS projects
 
-## 📂 **Portfolio \& Documentation**
+## 🌐 Connect
 
-- **[ch1ch0.me](https://ch1ch0.me)** – Terminal-style portfolio showcasing infrastructure and projects
-- **[srv-m1m-asahi](https://github.com/ch1ch0-FOSS/srv-m1m-asahi)** – Complete server build documentation and system architecture
-- **Local Forgejo Instance** – Private Git server at http://192.168.1.64:3000 (mirrored to GitHub)
+- **Portfolio:** [www.ch1ch0.me](https://www.ch1ch0.me)
+- **GitHub:** [ch1ch0-FOSS](https://github.com/ch1ch0-FOSS)
+- **Email:** ch1ch0@duck.com
 
-All projects follow enterprise Linux standards: FHS directory structure, systemd service management, comprehensive documentation, and audit-ready logging.
+## 💡 Philosophy
 
-***
+**Local-first, audit-ready, keyboard-driven**
 
-## 🎯 **Career Transition Goals**
+I believe in self-hosted infrastructure, transparent documentation, and vim-aligned productivity. All work originates in local Forgejo instance before mirroring to GitHub for public visibility.
 
-Actively seeking **Junior Linux Systems Administrator** or **DevOps Engineer** roles where I can apply hands-on infrastructure experience, troubleshooting skills, and commitment to documentation and best practices.
+---
 
-**What I Bring:**
-
-- Real-world experience building production infrastructure from scratch
-- Strong troubleshooting methodology and problem-solving persistence
-- Documentation-first mindset with audit-ready system design
-- Business operations background (former business owner) for cross-functional communication
-- Self-directed learning with focus on enterprise Linux standards (RHEL, Fedora, systemd)
-
-***
-
-## 📫 **Contact**
-
-**Email:** [ch1ch0@duck.com](mailto:ch1ch0@duck.com)
-**Phone:** Available upon request
-**Portfolio:** [ch1ch0.me](https://ch1ch0.me)
-**Location:** Open to remote opportunities
-
-***
-
-## 📊 **Current Learning Path**
-
-- Red Hat Certified System Administrator (RHCSA) preparation
-- Advanced systemd unit configuration and troubleshooting
-- Container orchestration (Kubernetes fundamentals)
-- CI/CD pipeline implementation with Forgejo Actions
-- Ansible automation and infrastructure as code
-
-***
-
-*All infrastructure hosted on local hardware (Apple M1 Mac Mini). This profile is version-controlled locally via Forgejo and mirrored to GitHub as part of a local-first development workflow.*
+**"From concept to production, documented every step."**
 
