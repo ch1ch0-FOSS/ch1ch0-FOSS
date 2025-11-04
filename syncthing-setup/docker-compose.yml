@@ -1,0 +1,20 @@
+version: '3.8'
+
+services:
+  syncthing:
+    image: syncthing/syncthing:latest
+    container_name: syncthing
+    environment:
+      - PUID=1000
+      - PGID=1000
+    volumes:
+      - syncthing_data:/var/syncthing
+    ports:
+      - "8384:8384"
+      - "22000:22000"
+      - "21027:21027/udp"
+    restart: unless-stopped
+
+volumes:
+  syncthing_data:
+
