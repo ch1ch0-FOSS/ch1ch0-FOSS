@@ -2,6 +2,10 @@
 
 Transitioning from health \& wellness to Linux infrastructure and DevOps through hands-on system administration, automation, and open-source contributions.
 
+🔧 Linux Systems Architect • Infrastructure-as-Code • Fedora Asahi M1
+📂 Local-first infrastructure: Forgejo → GitHub → ch1ch0.me
+🎯 Open to: SysAdmin • DevOps • SRE roles
+
 ## 🔧 Current Focus
 
 - Building production Linux infrastructure on Apple Silicon (M1 Mac Mini)
@@ -34,6 +38,16 @@ Transitioning from health \& wellness to Linux infrastructure and DevOps through
 - **Vaultwarden** (Password management, binary deployment)
 - **ollama** (LLM tools)
 
+## 📊 Infrastructure Stats
+
+| Metric | Status |
+|--------|--------|
+| **FHS Compliance** | ✅ 100% (10/10 checks) |
+| **Uptime** | 24/7 from home network |
+| **Recovery Time** | <30 minutes |
+| **Backup Retention** | 7 days (tested monthly) |
+| **Documentation** | 30+ professional pages |
+| **Services** | 4 (Forgejo, Syncthing, Vaultwarden, Ollama) |
 
 ## 📂 Featured Repositories
 
