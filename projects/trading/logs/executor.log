@@ -1,7 +1,0 @@
-2025-11-11 20:20:21,828 - INFO - Database tables verified/created
-2025-11-11 20:20:21,828 - INFO - PaperTradeExecutor initialized successfully
-2025-11-11 20:20:22,214 - INFO - Order submitted: SPY 1 buy @ Order ID: b0942254-5a66-4cb6-aa02-f6a8cd5a6539
-2025-11-11 20:20:22,225 - INFO - Trade logged: SPY 1 buy @ None
-2025-11-11 20:24:26,062 - INFO - Database tables verified/created
-2025-11-11 20:24:26,062 - INFO - PaperTradeExecutor initialized successfully
-2025-11-11 20:24:26,401 - ERROR - Error executing trade for SPY: {"buying_power":"316.67","code":40310000,"cost_basis":"683.33","message":"insufficient buying power"}
