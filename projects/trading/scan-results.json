@@ -1,0 +1,39 @@
+{
+  "scan_date": "2025-11-09T20:10:51.538114",
+  "candidates": [
+    {
+      "symbol": "VALE",
+      "current": 12.16,
+      "support": 12.06,
+      "resistance": 16.0,
+      "bullish_entry": 12.06,
+      "bullish_stop": 11.939400000000001,
+      "bullish_target_5to1": 12.659999999999998,
+      "resistance_as_target": 16.0,
+      "resistance_ratio": 38.400000000000134
+    },
+    {
+      "symbol": "PBR",
+      "current": 12.86,
+      "support": 12.6,
+      "resistance": 18.85,
+      "bullish_entry": 12.6,
+      "bullish_stop": 12.474,
+      "bullish_target_5to1": 14.159999999999998,
+      "resistance_as_target": 18.85,
+      "resistance_ratio": 23.038461538461565
+    },
+    {
+      "symbol": "MDLZ",
+      "current": 57.18,
+      "support": 55.81,
+      "resistance": 75.0,
+      "bullish_entry": 55.81,
+      "bullish_stop": 55.2519,
+      "bullish_target_5to1": 64.02999999999999,
+      "resistance_as_target": 75.0,
+      "resistance_ratio": 13.007299270073018
+    }
+  ],
+  "total_found": 3
+}
