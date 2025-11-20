@@ -14,18 +14,18 @@ hardened deployments, and complete operational ownership.
  * **Seeking:** SysAdmin • DevOps • SRE • Infrastructure roles
 
 Understanding the ch1ch0 ecosystem:
-Profile | Purpose | Location | Visibility |
-ch1ch0-FOSS.me Professional portfolio & proof-of-practice showcase | ch1ch0-FOSS | Public |
-ch1ch0-FOSS | Disaster recovery baselines(sanitized configs & IaC templates) | ch1ch0-FOSS repos | Public
-ch1ch0.me | Personal domain (migrating to ch1ch0-FOSS.me) | www.ch1ch0.me | Public |
-ch1ch0 | Decentralized social handles & community presence | Various platforms | Public |
+| Profile | Purpose | Location | Visibility |
+| ch1ch0-FOSS.me | Professional portfolio & proof-of-practice showcase | ch1ch0-FOSS | Public |
+| ch1ch0-FOSS | Disaster recovery baselines(sanitized configs & IaC templates) | ch1ch0-FOSS repos | Public
+| ch1ch0.me | Personal domain (migrating to ch1ch0-FOSS.me) | www.ch1ch0.me | Public |
+| ch1ch0 | Decentralized social handles & community presence | Various platforms | Public |
  
     * All proof-of-practice for employers is now housed under ch1ch0-FOSS
 
 ## System Infrastructure:
     * Currently: v6.0 
 
-**Production Enviroment**
+## Production Enviroment
 
 **Hardware & OS:**
 
@@ -81,27 +81,27 @@ Knowledge Management | Zk (Zettelkasten), Markdown, production PKM (local zk not
 ## Self-Hosted Services (Production)
     * All services binary-deployed for maximum stability on Apple Silicon:
 
-Service | Purpose | Stack | Status|
-Forgejo | Git platform & primary VCS | Go + SQLite | ✅ 24/7 |
-Syncthing | P2P file synchronization | Go ✅ 24/7 | 
-Vaultwarden | Password management | Rust + SQLite ✅ | 24/7 | 
-Ollama | Local LLM inference | Go ✅ | 24/7 |
-oxicloud | File storage & mangament | | 24/7 |
+|Service | Purpose | Stack | Status |
+| Forgejo | Git platform & primary VCS | Go + SQLite | ✅ 24/7 |
+| Syncthing | P2P file synchronization | Go ✅ 24/7 | 
+| Vaultwarden | Password management | Rust + SQLite ✅ | 24/7 | 
+| Ollama | Local LLM inference | Go ✅ | 24/7 |
+| oxicloud | File storage & mangament | | 24/7 |
 
 ***
 
 ## Infrastructure Metrics
     * Metric Performance
 
-FHS Compliance | ✅ 100% (filesystem hierarchy standard) |
-System Uptime | 24/7 from home network |
-Disaster Recovery | <20 minutes (automated bootstrap) |
-Backup Strategy | Git-backed congs + 7-day retention (tested
+| FHS Compliance | ✅ 100% (filesystem hierarchy standard) |
+| System Uptime | 24/7 from home network |
+| Disaster Recovery | <20 minutes (automated bootstrap) |
+| Backup Strategy | Git-backed congs + 7-day retention (tested
 monthly) |
-Documentation | 10 complete reference guides + 30+ professional
+| Documentation | 10 complete reference guides + 30+ professional
 pages | 
-Shell Startup | <100ms (optimized Zsh) |
-Nvim Startup | <200ms (lazy.nvim plugin management) |
+| Shell Startup | <100ms (optimized Zsh) |
+| Nvim Startup | <200ms (lazy.nvim plugin management) |
 
 ***
 
@@ -241,7 +241,7 @@ dependency, zero vendor lock-in, zero data extraction.
 
 **Production Zettelkasten System**
 
-**ch1ch0-GNOSIS:** Git-backed personal knowledge management
+**zk:** Git-backed personal knowledge management
 
 **Features:**
     * Zk CLI-driven note creation with 7 specialized templates
@@ -266,17 +266,17 @@ dependency, zero vendor lock-in, zero data extraction.
 **Complete Reference System**
 All reference guides accessible via shell aliases:
 
-Tool | Command | Content |
-Neovim | nvimref | Keybindings, plugins, modular config |
-Tmux | tmuxref | Vi-mode, pane nav, best-in-class setup |
-Foot | footref | Wayland terminal configuration |
-Zk | zkref | Zettelkasten workow and templates |
-Git | gitref | Advanced workows, dual remotes |
-Vimb | vimbref | Keyboard-driven browser navigation
-Zsh | zshref | Shell conguration, vi-mode |
-Bash | bashref | Scripting best practices | 
-Lazygit | lgref | TUI Git workow | 
-Sway | swayref | Window manager keybindings |
+| Tool | Command | Content |
+| Neovim | nvimref | Keybindings, plugins, modular config |
+| Tmux | tmuxref | Vi-mode, pane nav, best-in-class setup |
+| Foot | footref | Wayland terminal configuration |
+| Zk | zkref | Zettelkasten workow and templates |
+| Git | gitref | Advanced workows, dual remotes |
+| Vimb | vimbref | Keyboard-driven browser navigation
+| Zsh | zshref | Shell conguration, vi-mode |
+| Bash | bashref | Scripting best practices | 
+| Lazygit | lgref | TUI Git workow | 
+| Sway | swayref | Window manager keybindings |
 
 **Each guide includes:**
     * Complete keybindings reference
@@ -298,7 +298,7 @@ Email: ch1ch0@duck.com
 
 Local-First • Audit-ready • Keyboard-driven • Operator-controlled
 Simple • Seamless • Structured • Strategic 
-K•I•S•S
+Keep • It • Simple • Stupid
 
 Infrastructure is on-premise and self-hosted. Transparent, auditable, and reproducible via
 Infrastructure-as-Code. Vi-aligned productivity across the entire stack. Complete

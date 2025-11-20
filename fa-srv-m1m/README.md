@@ -1,60 +1,121 @@
-# srv-m1m-asahi: Production Infrastructure on Apple Silicon
+# ch1ch0-FOSS: fa-srv-m1m
+    **Fedora Asahi Server M1 Mac mini**
 
-**Status:** ✅ 100% FHS Compliant | ✅ 30-min Disaster Recovery | ✅ Production-Ready
+**Production Linux Infrastructure | Fedora Asahi Apple Silicon M1**
 
-## Architecture Highlights
+Proof-of-practice showcase for enterprise-grade system administration. 24/7 uptime, <20 minute disaster recovery, 100% FHS compliance.
 
-- 3-tier storage (OS/Data/Cache SSDs)
-- FHS 3.0 compliant filesystem
-- 4 containerized services (Forgejo, Syncthing, Vaultwarden, Ollama)
-- Daily automated backups with monthly testing
-- Enterprise-grade incident response procedures
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](LICENSE)
+[![Fedora Asahi](https://img.shields.io/badge/Fedora-Asahi_Remix-51A2DA?logo=fedora)](https://asahilinux.org)
+[![System Setup](https://img.shields.io/badge/Documentation-v6.0-success)](SYSTEM-SETUP-v6.0.md)
 
-**[See Full Architecture Guide →](./ARCHITECTURE.md)**
-
-**Proof of Practice:** Complete Fedora Asahi M1 infrastructure deployment, maintenance, and disaster recovery.
-
-This is my actual running server. It demonstrates how I bootstrap infrastructure, deploy services, maintain backups, and recover from failure.
+---
 
 ## Quick Start
 
-See the numbered directories in order to understand the full deployment:
+**Primary Documentation:** [SYSTEM-SETUP-v6.0.md](SYSTEM-SETUP-v6.0.md)
 
-1. **00-BOOTSTRAP** - Build Fedora Asahi from scratch
-2. **01-FORGEJO** - Self-hosted Git server
-3. **02-VAULTWARDEN** - Encrypted password management
-4. **03-SYNCTHING** - File synchronization
-5. **04-INFRASTRUCTURE** - Monitoring and health checks
-6. **05-DISASTER-RECOVERY** - Backup and recovery procedures
+30+ page reference covering:
+- Fedora Asahi M1 base system configuration
+- vi-universal workflow toolchain (nvim, tmux, foot, sway)
+- Self-hosted infrastructure (Forgejo, Vaultwarden, Syncthing)
+- Zettelkasten PKM system (ch1ch0-GNOSIS)
+- Disaster recovery procedures (<20 minute full restoration)
 
-## My Infrastructure Philosophy
+---
 
-- **Reproducible** - Build from scratch in under 2 hours
-- **Documented** - Step-by-step deployment guides
-- **Tested** - Disaster recovery tested monthly
-- **Minimal** - Only essential tools installed
-- **Secure** - Hardened configs, encrypted storage, automated backups
+## Repository Structure
 
-## Getting Started
+fa-srv-m1m/
+├── 00-BOOTSTRAP/ # System initialization, package installation
+├── 01-USERS-GROUPS/ # User/group management, privilege config
+├── 02-CORE-INFRASTRUCTURE/ # Networking, storage, systemd services
+├── 03-USER-ENVIRONMENT/ # Shell, terminal, window manager configs
+├── 04-SERVICES/ # Self-hosted service deployment
+│ ├── forgejo/ # Git forge (code.ch1ch0-FOSS.me)
+│ ├── vaultwarden/ # Password management (vault.ch1ch0-FOSS.me)
+│ └── syncthing/ # File synchronization
+├── 05-DISASTER-RECOVERY/ # Backup scripts, restoration procedures
+├── DOCUMENTATION/ # Tool-specific guides (nvim, tmux, git, zk)
+├── VISUALS/ # System screenshots, architecture diagrams
+└── SYSTEM-SETUP-v6.0.md # Master documentation
 
-Each numbered directory (00-05) contains:
-- README.md with overview
-- Implementation files (scripts, configs, documentation)
-- Backup/restore procedures
 
-Start with 00-BOOTSTRAP to understand the full setup.
+---
 
-## Key Files
+## Infrastructure Stats
 
-- `TROUBLESHOOTING.md` - Common issues and solutions
-- `packages.txt` - All installed packages
-- Each directory has its own README.md
+| Metric | Value |
+|--------|-------|
+| **Uptime Target** | 24/7 self-hosted services |
+| **Disaster Recovery** | <20 minutes full restoration |
+| **Documentation** | 30+ pages, 10 tool guides |
+| **Package Management** | 100% FHS compliance |
+| **Architecture** | Apple Silicon M1 (ARM64) |
+| **Base System** | Fedora Asahi Remix |
 
-## For Hiring Managers
+---
 
-Check 05-DISASTER-RECOVERY first—that's where operational discipline matters most.
+## Service Deployment
 
-[![GitHub](https://img.shields.io/badge/Local--First-Forgejo-blue)](https://github.com/ch1ch0-FOSS)
-[![FHS Compliance](https://img.shields.io/badge/FHS-100%25-brightgreen)](./04-INFRASTRUCTURE/FHS-compliance-guide.md)
-[![Recovery RTO](https://img.shields.io/badge/RTO-%3C30min-brightgreen)](./05-DISASTER-RECOVERY/)
+### Forgejo (Git Forge)
+- **URL:** https://code.ch1ch0-FOSS.me
+- **Setup:** [04-SERVICES/forgejo/](04-SERVICES/forgejo/)
+- **Features:** Self-hosted GitHub alternative, CI/CD ready
+
+### Vaultwarden (Password Manager)
+- **URL:** https://vault.ch1ch0-FOSS.me
+- **Setup:** [04-SERVICES/vaultwarden/](04-SERVICES/vaultwarden/)
+- **Features:** Bitwarden-compatible, end-to-end encrypted
+
+### Syncthing (File Sync)
+- **Setup:** [04-SERVICES/syncthing/](04-SERVICES/syncthing/)
+- **Features:** P2P synchronization, cross-device workflow
+
+---
+
+## Tool Mastery Guides
+
+Located in `DOCUMENTATION/`:
+
+- **[nvim.md](DOCUMENTATION/nvim.md)** - Neovim configuration, keybindings, plugin management
+- **[tmux.md](DOCUMENTATION/tmux.md)** - Terminal multiplexing workflow
+- **[foot.md](DOCUMENTATION/foot.md)** - Wayland-native terminal emulator
+- **[zk.md](DOCUMENTATION/zk.md)** - Zettelkasten note-taking system
+- **[git.md](DOCUMENTATION/git.md)** - Version control patterns
+- **[lazygit.md](DOCUMENTATION/lazygit.md)** - TUI Git client
+- **[sway.md](DOCUMENTATION/sway.md)** - Tiling window manager (Wayland)
+- **[zsh.md](DOCUMENTATION/zsh.md)** - Shell configuration
+- **[bash.md](DOCUMENTATION/bash.md)** - Shell scripting reference
+- **[vimb.md](DOCUMENTATION/vimb.md)** - Vim-like web browser
+
+---
+
+## Key Achievements
+
+- ✅ **Production-ready infrastructure** on Apple Silicon M1
+- ✅ **Documented disaster recovery** with <20 minute RTO
+- ✅ **Self-hosted services** replacing commercial SaaS
+- ✅ **vi-universal workflow** across all tooling
+- ✅ **FHS-compliant** package and configuration management
+- ✅ **Zettelkasten PKM** with 7 specialized note templates
+
+---
+
+## Portfolio Context
+
+This repository is part of the **[ch1ch0-FOSS](https://github.com/ch1ch0-FOSS)** professional portfolio.
+
+**Website:** https://ch1ch0-FOSS.me  
+**Position:** SysAdmin / DevOps / SRE  
+**Focus:** Linux infrastructure, automation, self-hosted architecture
+
+---
+
+## License
+
+MIT License - See [LICENSE](LICENSE) for details.
+
+Documentation and configuration examples provided as-is for educational and professional demonstration purposes.
+
 
