@@ -86,7 +86,7 @@ The **Filesystem Hierarchy Standard (FHS)** defines the directory structure and 
 | `/mnt/data/git/ch1ch0.me/` | Portfolio website source | git | Mirror to GitHub → Vercel |
 | `/mnt/data/home/` | User home directories | user | Symlinked to `/home/` |
 | `/mnt/data/home/sysadmin/` | Admin user workspace | sysadmin | SSH-accessible, persistent |
-| `/mnt/data/home/ch1ch0/` | Your personal workspace | ch1ch0 | Primary development environment |
+| `/mnt/data/home/user/` | Your personal workspace | ch1ch0 | Primary development environment |
 | `/mnt/data/home/trading/` | Trading analysis workspace | trading | Isolated trading tools & data |
 | `/mnt/data/media/` | Large media files (photos, docs) | sysadmin | Archive storage |
 | `/mnt/data/projects/` | Non-git development work | varies | Shared workspace (optional) |
@@ -189,7 +189,7 @@ Physical Hardware
 /home/
 ├─ git → (system user, minimal home)
 ├─ sysadmin → /mnt/data/home/sysadmin (symlink)
-├─ ch1ch0 → /mnt/data/home/ch1ch0 (symlink)
+├─ ch1ch0 → /mnt/data/home/user (symlink)
 └─ trading → /mnt/data/home/trading (symlink)
 ```
 
@@ -202,7 +202,7 @@ Physical Hardware
 **Symlink Creation (already done):**
 ```bash
 sudo ln -s /mnt/data/home/sysadmin /home/sysadmin
-sudo ln -s /mnt/data/home/ch1ch0 /home/ch1ch0
+sudo ln -s /mnt/data/home/user /home/user
 sudo ln -s /mnt/data/home/trading /home/trading
 ```
 

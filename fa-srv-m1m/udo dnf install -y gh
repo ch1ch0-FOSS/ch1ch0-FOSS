@@ -1,0 +1,49 @@
+[1mdiff --git a/04-INFRASTRUCTURE/FHS-compliance-guide.md b/04-INFRASTRUCTURE/FHS-compliance-guide.md[m
+[1mindex 823849b..d31babd 100644[m
+[1m--- a/04-INFRASTRUCTURE/FHS-compliance-guide.md[m
+[1m+++ b/04-INFRASTRUCTURE/FHS-compliance-guide.md[m
+[36m@@ -86,7 +86,7 @@[m [mThe **Filesystem Hierarchy Standard (FHS)** defines the directory structure and[m
+ | `/mnt/data/git/ch1ch0.me/` | Portfolio website source | git | Mirror to GitHub → Vercel |[m
+ | `/mnt/data/home/` | User home directories | user | Symlinked to `/home/` |[m
+ | `/mnt/data/home/sysadmin/` | Admin user workspace | sysadmin | SSH-accessible, persistent |[m
+[31m-| `/mnt/data/home/ch1ch0/` | Your personal workspace | ch1ch0 | Primary development environment |[m
+[32m+[m[32m| `/mnt/data$HOME/` | Your personal workspace | ch1ch0 | Primary development environment |[m
+ | `/mnt/data/home/trading/` | Trading analysis workspace | trading | Isolated trading tools & data |[m
+ | `/mnt/data/media/` | Large media files (photos, docs) | sysadmin | Archive storage |[m
+ | `/mnt/data/projects/` | Non-git development work | varies | Shared workspace (optional) |[m
+[36m@@ -189,7 +189,7 @@[m [mPhysical Hardware[m
+ /home/[m
+ ├─ git → (system user, minimal home)[m
+ ├─ sysadmin → /mnt/data/home/sysadmin (symlink)[m
+[31m-├─ ch1ch0 → /mnt/data/home/ch1ch0 (symlink)[m
+[32m+[m[32m├─ ch1ch0 → /mnt/data$HOME (symlink)[m
+ └─ trading → /mnt/data/home/trading (symlink)[m
+ ```[m
+ [m
+[36m@@ -202,7 +202,7 @@[m [mPhysical Hardware[m
+ **Symlink Creation (already done):**[m
+ ```bash[m
+ sudo ln -s /mnt/data/home/sysadmin /home/sysadmin[m
+[31m-sudo ln -s /mnt/data/home/ch1ch0 /home/ch1ch0[m
+[32m+[m[32msudo ln -s /mnt/data$HOME $HOME[m
+ sudo ln -s /mnt/data/home/trading /home/trading[m
+ ```[m
+ [m
+[1mdiff --git a/05-DISASTER-RECOVERY/restore-procedure.md b/05-DISASTER-RECOVERY/restore-procedure.md[m
+[1mindex 75f6a03..6a6f7fc 100644[m
+[1m--- a/05-DISASTER-RECOVERY/restore-procedure.md[m
+[1m+++ b/05-DISASTER-RECOVERY/restore-procedure.md[m
+[36m@@ -83,11 +83,11 @@[m [msudo useradd -m -s /bin/zsh trading[m
+ sudo useradd -r -s /bin/bash git  # System user for Forgejo[m
+ [m
+ # Remove default home directories[m
+[31m-sudo rm -rf /home/sysadmin /home/ch1ch0 /home/trading[m
+[32m+[m[32msudo rm -rf /home/sysadmin $HOME /home/trading[m
+ [m
+ # Create symlinks to persistent storage[m
+ sudo ln -s /mnt/data/home/sysadmin /home/sysadmin[m
+[31m-sudo ln -s /mnt/data/home/ch1ch0 /home/ch1ch0[m
+[32m+[m[32msudo ln -s /mnt/data$HOME $HOME[m
+ sudo ln -s /mnt/data/home/trading /home/trading[m
+ [m
+ # Verify[m

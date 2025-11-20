@@ -83,11 +83,11 @@ sudo useradd -m -s /bin/zsh trading
 sudo useradd -r -s /bin/bash git  # System user for Forgejo
 
 # Remove default home directories
-sudo rm -rf /home/sysadmin /home/ch1ch0 /home/trading
+sudo rm -rf /home/sysadmin /home/user /home/trading
 
 # Create symlinks to persistent storage
 sudo ln -s /mnt/data/home/sysadmin /home/sysadmin
-sudo ln -s /mnt/data/home/ch1ch0 /home/ch1ch0
+sudo ln -s /mnt/data/home/user /home/user
 sudo ln -s /mnt/data/home/trading /home/trading
 
 # Verify
