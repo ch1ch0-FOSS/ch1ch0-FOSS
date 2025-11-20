@@ -1,1 +1,33 @@
-config.yml
+# OS
+.DS_Store
+*.swp
+*.swo
+*~
+
+# Secrets (never commit)
+.env
+.env.local
+secrets/
+**/credentials/
+**/*.key
+**/*.pem
+**/*.crt
+
+# Logs
+logs/
+*.log
+
+# Build artifacts
+node_modules/
+build/
+dist/
+*.pyc
+
+# IDE
+.vscode/
+.idea/
+*.swp
+
+# Backups
+*.bak
+*.backup
