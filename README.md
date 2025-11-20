@@ -1,4 +1,4 @@
-# ch1ch9 | Systems Infrastructure Engineer 
+# ch1ch0 | Systems Infrastructure Engineer 
 
 **Terminal-First Linux Infrastructure • Fedora Asahi Apple Silicon • Vi-Universal
 Workow**
@@ -8,11 +8,10 @@ with zero vendor lock-in. Specializing in reproducible Infrastructure-as-Code, s
 hardened deployments, and complete operational ownership.
  
  * Infrastructure Focus: Terminal mastery • IaC automation • Self-hosted services
- * Portfolio Organization: Local-first (Forgejo) → Public showcase (GitHub)
- * Seeking: SysAdmin • DevOps • SRE • Infrastructure roles
-
-
-# ch1ch0-FOSS | ch1ch0-FOSS.me | ch1ch0.me | ch1ch0 
+ * Portfolio Organization: Local-first ch1ch0 (Forgejo) → Public showcase ch1ch0-FOSS
+ (GitHub) 
+ * ch1ch0-FOSS.me (Public Domain) | ch1ch0.me (Personal Domain) 
+ * **Seeking:** SysAdmin • DevOps • SRE • Infrastructure roles
 
 Understanding the ch1ch0 ecosystem:
 Profile | Purpose | Location | Visibility |
@@ -23,11 +22,12 @@ ch1ch0 | Decentralized social handles & community presence | Various platforms |
  
     * All proof-of-practice for employers is now housed under ch1ch0-FOSS
 
-## System Infrastructure v6.0 
+## System Infrastructure:
+    * Currently: v6.0 
 
 **Production Enviroment**
 
-Hardware & OS:
+**Hardware & OS:**
 
     * Host: Mac Mini M1 (Apple Silicon - ARM64)
     * Operating System: Fedora Asahi Remix 42 (Linux native on Apple Silicon)
@@ -35,9 +35,6 @@ Hardware & OS:
     * Display Server: Wayland (native)
     * ch1ch0 | Systems Infrastructure Engineer
     * Window Manager: Sway with vi-universal keybindings
-
-
-## System Infrastructure v6.0
     
 ## Architecture Highlights
 
@@ -64,14 +61,14 @@ Hardware & OS:
     * Version Control: Forgejo (self-hosted primary), GitHub (public mirror)
     * IaC & Automation Ansible playbooks, Shell scripting, systemd services
     * Security SSH key-only auth, rewalld, SELinux mandatory access control
-
  
 ***
 
- **Technical Stack**
+## Technical Stack
 
 **Systems & Infrastructure** 
-    *Development Environment*
+    * Development Environment
+
 Category | Technologies | 
 Languages| TypeScript, Python, Shell/Bash, Rust, Go | 
 Frontend | Next.js 16, React, HTML/CSS, Tailwind | 
@@ -94,8 +91,7 @@ oxicloud | File storage & mangament | | 24/7 |
 ***
 
 ## Infrastructure Metrics
-
-    **Metric Performance**
+    * Metric Performance
 
 FHS Compliance | ✅ 100% (filesystem hierarchy standard) |
 System Uptime | 24/7 from home network |
@@ -114,7 +110,7 @@ Nvim Startup | <200ms (lazy.nvim plugin management) |
 **System Infrastructure v.6.0**
     *Production Linux environment on Apple Silicon*
 
-**Repository:** System Setup v6.0 Documentation [fa-srv-m1m/docs/SYSTEM-SETUP-v<X.X.X>.md]
+**Repository:** Documentation [ch1ch0-FOSS/fa-srv-m1m/docs/]
 
 **Demonstrates:**
    
