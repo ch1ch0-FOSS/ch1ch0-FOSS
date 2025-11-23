@@ -2,10 +2,10 @@
 
 # repeat for sway
 
-Create comprehensive sway reference guide in `/mnt/data/git/fa-system/config/sway/SWAY-REFERENCE.md`:
+Create comprehensive sway reference guide in `/mnt/data/git/fa-srv-m1m/config/sway/SWAY-REFERENCE.md`:
 
 ```bash
-cat > /mnt/data/git/fa-system/config/sway/SWAY-REFERENCE.md << 'EOF'
+cat > /mnt/data/git/fa-srv-m1m/config/sway/SWAY-REFERENCE.md << 'EOF'
 # SWAY COMPLETE REFERENCE GUIDE
 **i3wm-compatible Wayland Compositor | Window Manager | Tiling Display Server**
 
@@ -985,7 +985,7 @@ Usage reference alias:
 
 ```bash
 # Add to ~/.zshrc
-alias swayref='nvim /mnt/data/git/fa-system/config/sway/SWAY-REFERENCE.md'
+alias swayref='nvim /mnt/data/git/fa-srv-m1m/config/sway/SWAY-REFERENCE.md'
 ```
 
 This reference covers all sway operations—window management, workspaces, input/output configuration, keybindings, modes, and integration with your foot/tmux/nvim ecosystem while maintaining vi-like keybindings throughout the entire system.

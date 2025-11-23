@@ -1,7 +1,7 @@
 #!/bin/bash
 set -e
 
-PRIVATE_REPO="/mnt/data/git/system"
+PRIVATE_REPO="/mnt/data/git/srv-m1m"
 PUBLIC_REPO="/mnt/data/git/user-FOSS/infrastructure"
 
 echo "=== Syncing Private → Public Infrastructure ==="

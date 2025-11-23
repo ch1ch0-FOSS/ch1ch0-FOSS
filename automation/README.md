@@ -1,6 +1,6 @@
 # Automation
 
-Executable automation for system infrastructure deployment and management.
+Executable automation for srv-m1m infrastructure deployment and management.
 
 ## Purpose
 
@@ -24,8 +24,8 @@ Executable automation for system infrastructure deployment and management.
 - `install_zk.sh` - zk Zettelkasten CLI (knowledge management)
 
 **deployment/**
-- `deploy-system-config.sh` - Pull latest system repo, deploy system configs
-- `deploy-toolkit-config.sh` - Pull latest system repo, symlink toolkit configs to user environment
+- `deploy-system-config.sh` - Pull latest srv-m1m repo, deploy system configs
+- `deploy-toolkit-config.sh` - Pull latest srv-m1m repo, symlink toolkit configs to user environment
 - `sync-to-public.sh` - Sanitized repository sync to public showcase
 
 ## Usage
@@ -111,15 +111,15 @@ bash sync-to-public.sh
 **Data Locations:**
 - `/mnt/data/srv/` - Service data directories
 - `/srv/` - Symlinks to service directories (FHS compliance)
-- `/mnt/data/git/` - Git repositories (notebooks, configurations, system source of truth)
+- `/mnt/data/git/` - Git repositories (notebooks, configurations, srv-m1m source of truth)
 
 ## Deployment Workflow
 
-**deploy-toolkit-config.sh** syncs toolkit directory from `/mnt/data/git/system/toolkit` to user config locations:
+**deploy-toolkit-config.sh** syncs toolkit directory from `/mnt/data/git/srv-m1m/toolkit` to user config locations:
 - Pulls latest commits from git
 - Symlinks toolkit configs to `~/.config/` (nvim, sway, zk, tmux, foot, fuzzel, etc.)
 - Reloads affected services (e.g., sway)
-- Enables rapid deployment of identical toolkit setup to any machine with system cloned
+- Enables rapid deployment of identical toolkit setup to any machine with srv-m1m cloned
 
 **deploy-system-config.sh** deploys system-level configurations (adjust as implementation evolves).
 

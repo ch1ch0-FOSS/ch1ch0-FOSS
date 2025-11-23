@@ -2,10 +2,10 @@
 
 # re peat for BASH
 
-Create comprehensive bash reference guide in `/mnt/data/git/fa-system/config/bash/BASH-REFERENCE.md`:
+Create comprehensive bash reference guide in `/mnt/data/git/fa-srv-m1m/config/bash/BASH-REFERENCE.md`:
 
 ```bash
-cat > /mnt/data/git/fa-system/config/bash/BASH-REFERENCE.md << 'EOF'
+cat > /mnt/data/git/fa-srv-m1m/config/bash/BASH-REFERENCE.md << 'EOF'
 # BASH COMPLETE REFERENCE GUIDE
 **Bourne-Again Shell | POSIX-compatible Shell | Scripting & Automation**
 
@@ -1144,11 +1144,11 @@ fi
 ### Quick Reference Aliases
 
 ```
-alias nvimref='nvim /mnt/data/git/fa-system/config/nvim/NVIM-REFERENCE.md'
-alias tmuxref='nvim /mnt/data/git/fa-system/config/tmux/TMUX-REFERENCE.md'
-alias gitref='nvim /mnt/data/git/fa-system/config/git/GIT-REFERENCE.md'
-alias zkref='nvim /mnt/data/git/fa-system/config/zk/ZK-REFERENCE.md'
-alias bashref='nvim /mnt/data/git/fa-system/config/bash/BASH-REFERENCE.md'
+alias nvimref='nvim /mnt/data/git/fa-srv-m1m/config/nvim/NVIM-REFERENCE.md'
+alias tmuxref='nvim /mnt/data/git/fa-srv-m1m/config/tmux/TMUX-REFERENCE.md'
+alias gitref='nvim /mnt/data/git/fa-srv-m1m/config/git/GIT-REFERENCE.md'
+alias zkref='nvim /mnt/data/git/fa-srv-m1m/config/zk/ZK-REFERENCE.md'
+alias bashref='nvim /mnt/data/git/fa-srv-m1m/config/bash/BASH-REFERENCE.md'
 ```
 
 
@@ -1217,7 +1217,7 @@ EOF
 Usage reference alias:
 ```bash
 # Add to ~/.bashrc
-alias bashref='nvim /mnt/data/git/fa-system/config/bash/BASH-REFERENCE.md'
+alias bashref='nvim /mnt/data/git/fa-srv-m1m/config/bash/BASH-REFERENCE.md'
 ```
 
 This reference covers all bash operations—variables, conditionals, loops, functions, scripting, job control, and system integration—organized for quick lookup and practical use.

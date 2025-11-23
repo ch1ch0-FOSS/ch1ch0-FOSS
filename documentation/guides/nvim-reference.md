@@ -615,5 +615,5 @@ Usage reference alias:
 
 bash
 # Add to ~/.zshrc
-alias vimref='nvim /mnt/data/git/fa-system/config/nvim/NVIM-REFERENCE.md'
+alias vimref='nvim /mnt/data/git/fa-srv-m1m/config/nvim/NVIM-REFERENCE.md'
 This reference covers all standard nvim operations in a quick-lookup format organized by task category, fully aligned with your vi-like universal keybindings across tmux/vimb/vifm/sway.

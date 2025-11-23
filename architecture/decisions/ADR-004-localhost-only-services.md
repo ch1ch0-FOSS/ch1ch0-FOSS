@@ -75,8 +75,8 @@ LISTEN 0 4096 *:3000 : (Forgejo - IPv6)
 
 **External Access Test** (2025-11-23)
 
-ssh -L 3000:localhost:PORT user@192.168.1.64
-curl -I http://localhost:PORT
+ssh -L 3000:localhost:3000 user@192.168.1.64
+curl -I http://localhost:3000
 
 HTTP/1.1 200 OK
 Result: PASS - Services accessible via tunnel
@@ -119,17 +119,17 @@ ollama.service (system service, not --user)
 ### SSH Tunnel (Standard Method)
 
 Single service
-ssh -L 3000:localhost:PORT user@192.168.1.64
+ssh -L 3000:localhost:3000 user@192.168.1.64
 
 Multiple services
-ssh -L 3000:localhost:PORT
+ssh -L 3000:localhost:3000
 -L 8000:localhost:8000
 -L 8384:localhost:8384
 -L 11434:localhost:11434
 user@192.168.1.64
 
 Access services
-curl http://localhost:PORT # Forgejo
+curl http://localhost:3000 # Forgejo
 curl http://localhost:8000 # Vaultwarden
 curl http://localhost:8384 # Syncthing
 curl http://localhost:11434 # Ollama

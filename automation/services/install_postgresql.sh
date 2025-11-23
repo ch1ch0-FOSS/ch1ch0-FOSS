@@ -6,7 +6,7 @@
 # Author       : user
 # Date         : 2025-11-22
 # Environment  : Fedora Asahi Remix 42 ARM64 (Apple Silicon)
-# Target System: system (192.168.1.64)
+# Target System: srv-m1m (192.168.1.64)
 #-------------------------------------------------------------------------------
 # Purpose      : Install PostgreSQL 16 database server
 # Service User : postgres

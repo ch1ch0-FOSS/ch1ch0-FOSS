@@ -9,7 +9,7 @@
 
 ## Purpose
 
-This document defines procedures for responding to system failures, security incidents, and operational emergencies on system-asahi infrastructure.
+This document defines procedures for responding to system failures, security incidents, and operational emergencies on srv-m1m-asahi infrastructure.
 
 ---
 
@@ -388,7 +388,7 @@ Within 48 hours of resolution:
 | **Logs** | System diagnostics | `sudo journalctl -xe` |
 | **Monitoring** | Service health | `systemctl status` |
 | **Backup** | Data recovery | `/mnt/data/backups/` |
-| **Runbooks** | Operational procedures | `system-asahi/` repo |
+| **Runbooks** | Operational procedures | `srv-m1m-asahi/` repo |
 | **Recovery** | Disaster recovery | `restore-procedure.md` |
 
 ---

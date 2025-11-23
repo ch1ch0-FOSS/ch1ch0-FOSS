@@ -2,7 +2,7 @@
 set -euo pipefail
 IFS=$'\n\t'
 
-REPO_PATH="/mnt/data/git/system"
+REPO_PATH="/mnt/data/git/srv-m1m"
 LOG_FILE="/var/log/deploy_system_config_$(date +%Y%m%d_%H%M%S).log"
 
 log_info()    { echo "[INFO]    $(date '+%Y-%m-%d %H:%M:%S') $*" | tee -a "$LOG_FILE"; }

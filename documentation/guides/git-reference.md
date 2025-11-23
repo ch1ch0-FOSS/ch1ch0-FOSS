@@ -839,5 +839,5 @@ Usage reference alias:
 
 bash
 # Add to ~/.zshrc
-alias gitref='nvim /mnt/data/git/fa-system/config/git/GIT-REFERENCE.md'
+alias gitref='nvim /mnt/data/git/fa-srv-m1m/config/git/GIT-REFERENCE.md'
 This reference covers all git operations—initialization, staging, branching, merging, history management, collaboration workflows, and integration with your nvim/tmux/zk ecosystem.

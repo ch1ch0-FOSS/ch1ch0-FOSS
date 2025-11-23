@@ -1,5 +1,5 @@
 Architecture
-System design documentation for system production infrastructure.
+System design documentation for srv-m1m production infrastructure.
 
 Purpose
 Defines hardware topology, storage architecture, service deployment patterns, and disaster recovery strategy. Documents design decisions, trade-offs, and operational constraints for professional reference and incident response.

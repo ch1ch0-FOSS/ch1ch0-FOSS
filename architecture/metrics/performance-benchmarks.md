@@ -1,4 +1,4 @@
-# Performance Benchmarks: system
+# Performance Benchmarks: srv-m1m
 
 **Date**: 2025-11-23  
 **System**: M1 Mac mini, 16GB RAM, Fedora Asahi Remix 42  
@@ -179,10 +179,10 @@ CPU: 0.10% user, 19.38% system
 ## Raw Test Data
 
 Detailed fio output stored in:
-- `/mnt/data/git/system/architecture/metrics/data-read.txt`
-- `/mnt/data/git/system/architecture/metrics/data-write.txt`
-- `/mnt/data/git/system/architecture/metrics/fastdata-read.txt` (pending)
-- `/mnt/data/git/system/architecture/metrics/fastdata-write.txt` (pending)
+- `/mnt/data/git/srv-m1m/architecture/metrics/data-read.txt`
+- `/mnt/data/git/srv-m1m/architecture/metrics/data-write.txt`
+- `/mnt/data/git/srv-m1m/architecture/metrics/fastdata-read.txt` (pending)
+- `/mnt/data/git/srv-m1m/architecture/metrics/fastdata-write.txt` (pending)
 
 ---
 

@@ -1,4 +1,4 @@
-# Contributing to system
+# Contributing to srv-m1m
 
 ## Project Status
 
@@ -95,5 +95,5 @@ This is a personal learning project. Documented primarily for:
 - Portfolio demonstration of infrastructure skills
 - Knowledge sharing with Linux/DevOps community
 
-If you found this helpful or have suggestions, contact via GitHub issues on public mirror (user-FOSS/fa-system).
+If you found this helpful or have suggestions, contact via GitHub issues on public mirror (user-FOSS/fa-srv-m1m).
 

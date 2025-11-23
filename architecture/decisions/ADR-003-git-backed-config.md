@@ -17,7 +17,7 @@ Traditional approaches (manual edits, `/etc` modifications) create configuration
 
 ## Decision
 
-All user-space configuration stored in `/mnt/data/git/system/toolkit/` and symlinked to home directory. OS partition contains zero unique configuration state.
+All user-space configuration stored in `/mnt/data/git/srv-m1m/toolkit/` and symlinked to home directory. OS partition contains zero unique configuration state.
 
 ### Implementation Details
 
@@ -83,21 +83,21 @@ toolkit/
 /home/user/.config/fuzzel/ → toolkit/terminal-ui/fuzzel/
 /home/user/.config/vimb/ → toolkit/terminal-ui/vimb/
 /home/user/.config/sway/ → toolkit/window-manager/
-/home/user/toolkit → /mnt/data/git/system/toolkit
+/home/user/toolkit → /mnt/data/git/srv-m1m/toolkit
 
 
 ## Recovery Procedure
 
 1. Clone repository
-git clone /mnt/data/git/system /tmp/system
+git clone /mnt/data/git/srv-m1m /tmp/srv-m1m
 
 2. Restore symlinks
-ln -s /mnt/data/git/system/toolkit/editors/nvim ~/.config/nvim
-ln -s /mnt/data/git/system/toolkit/shell/.zshrc ~/.zshrc
+ln -s /mnt/data/git/srv-m1m/toolkit/editors/nvim ~/.config/nvim
+ln -s /mnt/data/git/srv-m1m/toolkit/shell/.zshrc ~/.zshrc
 
 [repeat for all 14 symlinks]
 3. Verify
-find ~ -maxdepth 3 -type l -ls | grep /mnt/data/git/system | wc -l
+find ~ -maxdepth 3 -type l -ls | grep /mnt/data/git/srv-m1m | wc -l
 
 Expected: 14
 
@@ -111,7 +111,7 @@ Expected: 14
 
 ## References:
 
-- Repository: `/mnt/data/git/system/`
-- Toolkit directory: `/mnt/data/git/system/toolkit/`
-- Commitlint config: `/mnt/data/git/system/commitlint.config.js`
+- Repository: `/mnt/data/git/srv-m1m/`
+- Toolkit directory: `/mnt/data/git/srv-m1m/toolkit/`
+- Commitlint config: `/mnt/data/git/srv-m1m/commitlint.config.js`
 

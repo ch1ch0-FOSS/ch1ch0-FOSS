@@ -10,7 +10,7 @@
 
 ## Overview
 
-This document provides step-by-step procedures for recovering system-asahi infrastructure from catastrophic failures.
+This document provides step-by-step procedures for recovering srv-m1m-asahi infrastructure from catastrophic failures.
 
 **Failure Scenarios Covered:**
 1. OS SSD corruption or hardware failure
@@ -99,10 +99,10 @@ ls -la /home/
 ```bash
 # Clone infrastructure repo
 cd /tmp
-git clone https://github.com/user-FOSS/system-asahi.git
+git clone https://github.com/user-FOSS/srv-m1m-asahi.git
 
 # Install system packages
-cd system-asahi/00-BOOTSTRAP
+cd srv-m1m-asahi/00-BOOTSTRAP
 sudo bash fedora_bootstrap.sh
 
 # Or install from package list
@@ -113,9 +113,9 @@ sudo dnf install -y $(cat packages.txt)
 
 ```bash
 # Copy systemd service files
-sudo cp system-asahi/01-FORGEJO/*.service /etc/systemd/system/
-sudo cp system-asahi/02-VAULTWARDEN/*.service /etc/systemd/system/
-sudo cp system-asahi/03-SYNCTHING/*.service /etc/systemd/system/
+sudo cp srv-m1m-asahi/01-FORGEJO/*.service /etc/systemd/system/
+sudo cp srv-m1m-asahi/02-VAULTWARDEN/*.service /etc/systemd/system/
+sudo cp srv-m1m-asahi/03-SYNCTHING/*.service /etc/systemd/system/
 
 # Copy application configs
 sudo mkdir -p /etc/forgejo
@@ -312,7 +312,7 @@ Before disaster strikes, verify:
 
 | Resource | Location |
 |----------|----------|
-| **Infrastructure Repo** | https://github.com/user-FOSS/system-asahi |
+| **Infrastructure Repo** | https://github.com/user-FOSS/srv-m1m-asahi |
 | **Fedora Asahi Installer** | https://asahilinux.org/fedora/ |
 | **Backup Location (Primary)** | /mnt/data/backups/ |
 | **Backup Location (Offsite)** | [Document your offsite location] |

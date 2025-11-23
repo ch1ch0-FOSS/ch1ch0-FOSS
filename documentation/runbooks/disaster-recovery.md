@@ -6,7 +6,7 @@
 - Fedora Asahi (USB or recovery image)
 - External SSD with /mnt/data and /mnt/fastdata
 - List of all user accounts and SSH keys
-- This repository (system-asahi)
+- This repository (srv-m1m-asahi)
 - Documented backup from `/mnt/data/backups/`
 
 ---

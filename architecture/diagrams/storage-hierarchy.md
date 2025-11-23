@@ -1,4 +1,4 @@
-Storage Architecture: system
+Storage Architecture: srv-m1m
 ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
 
 / (162.7GB, btrfs, internal SSD)
@@ -13,7 +13,7 @@ Storage Architecture: system
 │   ├── syncthing/    (Sync metadata)
 │   └── ollama/       (LLM models)
 ├── git/
-│   ├── system/      (System config repo)
+│   ├── srv-m1m/      (System config repo)
 │   ├── user-GNOSIS/ (PKM repo)
 │   └── user-FOSS/  (Portfolio repos)
 ├── dev/

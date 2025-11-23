@@ -2,10 +2,10 @@
 
 # repeat for lazygit
 
-Create comprehensive lazygit reference guide in `/mnt/data/git/fa-system/config/lazygit/LAZYGIT-REFERENCE.md`:
+Create comprehensive lazygit reference guide in `/mnt/data/git/fa-srv-m1m/config/lazygit/LAZYGIT-REFERENCE.md`:
 
 ```bash
-cat > /mnt/data/git/fa-system/config/lazygit/LAZYGIT-REFERENCE.md << 'EOF'
+cat > /mnt/data/git/fa-srv-m1m/config/lazygit/LAZYGIT-REFERENCE.md << 'EOF'
 # LAZYGIT COMPLETE REFERENCE GUIDE
 **Git Terminal UI | Vi-like Interface | Git Operations Without Leaving Terminal**
 
@@ -1071,8 +1071,8 @@ alias lgc='lazygit -p ~/.config'
 ### Reference Aliases
 ```
 
-alias gitref='nvim /mnt/data/git/fa-system/config/git/GIT-REFERENCE.md'
-alias lgref='nvim /mnt/data/git/fa-system/config/lazygit/LAZYGIT-REFERENCE.md'
+alias gitref='nvim /mnt/data/git/fa-srv-m1m/config/git/GIT-REFERENCE.md'
+alias lgref='nvim /mnt/data/git/fa-srv-m1m/config/lazygit/LAZYGIT-REFERENCE.md'
 
 ```
 
@@ -1128,7 +1128,7 @@ Usage reference alias:
 
 ```bash
 # Add to ~/.zshrc or ~/.bashrc
-alias lgref='nvim /mnt/data/git/fa-system/config/lazygit/LAZYGIT-REFERENCE.md'
+alias lgref='nvim /mnt/data/git/fa-srv-m1m/config/lazygit/LAZYGIT-REFERENCE.md'
 ```
 
 This reference covers all lazygit operations—navigation, staging, committing, branching, rebasing, conflict resolution, and integration with your nvim/tmux/zsh ecosystem while maintaining vi-like keybindings throughout.

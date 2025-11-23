@@ -563,5 +563,5 @@ Usage reference alias:
 
 bash
 # Add to ~/.zshrc
-alias tmuxref='nvim /mnt/data/git/fa-system/config/tmux/TMUX-REFERENCE.md'
+alias tmuxref='nvim /mnt/data/git/fa-srv-m1m/config/tmux/TMUX-REFERENCE.md'
 This reference covers all tmux operations organized by task, synchronized with your vi-like universal keybindings system (hjkl for navigation, copy mode vi-style, prefix Ctrl+a).

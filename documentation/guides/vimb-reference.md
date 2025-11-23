@@ -800,5 +800,5 @@ Usage reference alias:
 
 bash
 # Add to ~/.zshrc
-alias vimbref='nvim /mnt/data/git/fa-system/config/vimb/VIMB-REFERENCE.md'
+alias vimbref='nvim /mnt/data/git/fa-srv-m1m/config/vimb/VIMB-REFERENCE.md'
 This reference covers all vimb operations—navigation, hinting, search, tabs, configuration, and integration with your sway/tmux/nvim ecosystem while maintaining vi-like universal keybindings throughout.

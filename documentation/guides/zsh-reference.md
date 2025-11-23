@@ -2,10 +2,10 @@
 
 # repeat for zsh
 
-Create comprehensive zsh reference guide in `/mnt/data/git/fa-system/config/zsh/ZSH-REFERENCE.md`:
+Create comprehensive zsh reference guide in `/mnt/data/git/fa-srv-m1m/config/zsh/ZSH-REFERENCE.md`:
 
 ```bash
-cat > /mnt/data/git/fa-system/config/zsh/ZSH-REFERENCE.md << 'EOF'
+cat > /mnt/data/git/fa-srv-m1m/config/zsh/ZSH-REFERENCE.md << 'EOF'
 # ZSH COMPLETE REFERENCE GUIDE
 **Z Shell | Advanced Interactive Shell | Command-Line Mastery**
 
@@ -1063,13 +1063,13 @@ time zsh -i -c exit
 ### All Reference Aliases
 
 ```
-alias nvimref='nvim /mnt/data/git/fa-system/config/nvim/NVIM-REFERENCE.md'
-alias tmuxref='nvim /mnt/data/git/fa-system/config/tmux/TMUX-REFERENCE.md'
-alias footref='nvim /mnt/data/git/fa-system/config/foot/FOOT-REFERENCE.md'
-alias zkref='nvim /mnt/data/git/fa-system/config/zk/ZK-REFERENCE.md'
-alias gitref='nvim /mnt/data/git/fa-system/config/git/GIT-REFERENCE.md'
-alias vimbref='nvim /mnt/data/git/fa-system/config/vimb/VIMB-REFERENCE.md'
-alias zshref='nvim /mnt/data/git/fa-system/config/zsh/ZSH-REFERENCE.md'
+alias nvimref='nvim /mnt/data/git/fa-srv-m1m/config/nvim/NVIM-REFERENCE.md'
+alias tmuxref='nvim /mnt/data/git/fa-srv-m1m/config/tmux/TMUX-REFERENCE.md'
+alias footref='nvim /mnt/data/git/fa-srv-m1m/config/foot/FOOT-REFERENCE.md'
+alias zkref='nvim /mnt/data/git/fa-srv-m1m/config/zk/ZK-REFERENCE.md'
+alias gitref='nvim /mnt/data/git/fa-srv-m1m/config/git/GIT-REFERENCE.md'
+alias vimbref='nvim /mnt/data/git/fa-srv-m1m/config/vimb/VIMB-REFERENCE.md'
+alias zshref='nvim /mnt/data/git/fa-srv-m1m/config/zsh/ZSH-REFERENCE.md'
 ```
 
 
@@ -1139,7 +1139,7 @@ EOF
 Usage reference alias:
 ```bash
 # Add to ~/.zshrc
-alias zshref='nvim /mnt/data/git/fa-system/config/zsh/ZSH-REFERENCE.md'
+alias zshref='nvim /mnt/data/git/fa-srv-m1m/config/zsh/ZSH-REFERENCE.md'
 ```
 
 This reference covers all zsh operations—history management, completion, prompt customization, functions, variables, job control, and integration with your nvim/tmux/zk ecosystem while maintaining consistency with your system-wide workflow.

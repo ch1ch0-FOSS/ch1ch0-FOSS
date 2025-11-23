@@ -650,5 +650,5 @@ Usage reference alias:
 
 bash
 # Add to ~/.zshrc
-alias footref='nvim /mnt/data/git/fa-system/config/foot/FOOT-REFERENCE.md'
+alias footref='nvim /mnt/data/git/fa-srv-m1m/config/foot/FOOT-REFERENCE.md'
 This reference covers foot terminal operations, keybindings, configuration, and integration with your sway/tmux/nvim workflow while maintaining vi-like universal keybindings throughout the entire stack.

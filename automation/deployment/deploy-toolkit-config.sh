@@ -2,7 +2,7 @@
 set -euo pipefail
 IFS=$'\n\t'
 
-REPO_PATH="/mnt/data/git/system"
+REPO_PATH="/mnt/data/git/srv-m1m"
 TOOLKIT_DIR="$REPO_PATH/toolkit"
 USER_HOME="$HOME"
 LOG_FILE="/var/log/deploy_toolkit_config_$(date +%Y%m%d_%H%M%S).log"

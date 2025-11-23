@@ -1,6 +1,6 @@
 <img src="https://r2cdn.perplexity.ai/pplx-full-logo-primary-dark%402x.png" style="height:64px;margin-right:32px"/>
 
-# system
+# srv-m1m
 
 Production infrastructure on Fedora Asahi Linux (Apple Silicon M1)
 
@@ -40,7 +40,7 @@ Self-hosted platform with 20-minute disaster recovery, Git-backed configuration 
 /mnt/data/          8TB persistent storage (btrfs, 1% used)
 ├── srv/            Service data (Forgejo, Vaultwarden, Syncthing, Ollama)
 ├── git/            Version-controlled repositories
-│   ├── system/    System configuration (source of truth)
+│   ├── srv-m1m/    System configuration (source of truth)
 │   ├── user-GNOSIS/  Zettelkasten PKM
 │   └── user-FOSS/    Portfolio projects
 ├── dev/            Portable toolchains (Rust, Go)
@@ -94,7 +94,7 @@ All services bound to localhost. External access requires reverse proxy or SSH t
 
 **Strategy**
 
-- All configs version-controlled in `/mnt/data/git/system/`
+- All configs version-controlled in `/mnt/data/git/srv-m1m/`
 - Home directory is symlinks only—no persistent state
 - Toolkit directory sources canonical configs
 - Conventional commits enforced via commitlint hooks
@@ -139,11 +139,11 @@ sudo mount /dev/sdX2 /mnt/fastdata
 sudo ln -s /mnt/data/home/user /home/user
 
 # 3. Restore configuration symlinks
-ln -s /mnt/data/git/system/toolkit/nvim ~/.config/nvim
-ln -s /mnt/data/git/system/toolkit/zsh/.zshrc ~/.zshrc
-ln -s /mnt/data/git/system/toolkit/tmux ~/.config/tmux
-ln -s /mnt/data/git/system/toolkit/sway ~/.config/sway
-ln -s /mnt/data/git/system/toolkit/foot ~/.config/foot
+ln -s /mnt/data/git/srv-m1m/toolkit/nvim ~/.config/nvim
+ln -s /mnt/data/git/srv-m1m/toolkit/zsh/.zshrc ~/.zshrc
+ln -s /mnt/data/git/srv-m1m/toolkit/tmux ~/.config/tmux
+ln -s /mnt/data/git/srv-m1m/toolkit/sway ~/.config/sway
+ln -s /mnt/data/git/srv-m1m/toolkit/foot ~/.config/foot
 
 # 4. Start services
 systemctl --user start forgejo vaultwarden syncthing ollama
@@ -181,7 +181,7 @@ df -h /mnt/data /mnt/fastdata
 ls -la ~/.config/nvim ~/.zshrc ~/.config/tmux
 
 # Test service endpoints
-curl -I localhost:PORT   # Forgejo
+curl -I localhost:3000   # Forgejo
 curl -I localhost:8000   # Vaultwarden
 curl -I localhost:8384   # Syncthing
 curl -I localhost:11434  # Ollama
@@ -231,5 +231,5 @@ systemctl --user list-units --type=service --state=running | grep -E 'forgejo|va
 
 [^1]: architecture.md
 
-[^2]: system.md
+[^2]: srv-m1m.md
 

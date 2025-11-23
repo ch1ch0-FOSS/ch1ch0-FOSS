@@ -12,4 +12,10 @@
     directory = /mnt/data/git/
 
 [commit]
-	template = /home/user/.gitmessage
+	template = /home/ch1ch0/.gitmessage
+[credential "https://github.com"]
+	helper = 
+	helper = !/usr/bin/gh auth git-credential
+[credential "https://gist.github.com"]
+	helper = 
+	helper = !/usr/bin/gh auth git-credential

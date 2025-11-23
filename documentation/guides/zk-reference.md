@@ -707,5 +707,5 @@ man zk.toml # Config manual
 Usage reference alias:
 
 # Add to ~/.zshrc
-alias zkref='nvim /mnt/data/git/fa-system/config/zk/ZK-REFERENCE.md'
+alias zkref='nvim /mnt/data/git/fa-srv-m1m/config/zk/ZK-REFERENCE.md'
 This reference covers all zk operations—note creation, searching, tagging, linking, and workflows—organized by task category, fully integrated with your nvim/tmux/git stack and vi-like universal keybindings throughout.

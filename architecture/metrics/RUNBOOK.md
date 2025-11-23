@@ -16,7 +16,7 @@
 
 Set timestamp
 DATE=$(date +%Y-%m-%d)
-cd /mnt/data/git/system/architecture/metrics/outputs
+cd /mnt/data/git/srv-m1m/architecture/metrics/outputs
 
 /mnt/data sequential read
 sudo fio --name=seq-read --rw=read --bs=1M --size=1G --numjobs=1
@@ -43,7 +43,7 @@ sudo fio --name=seq-write --rw=write --bs=1M --size=1G --numjobs=1
 
 Forgejo
 for i in {1..100}; do
-curl -o /dev/null -s -w "%{time_total}\n" localhost:PORT
+curl -o /dev/null -s -w "%{time_total}\n" localhost:3000
 done > ${DATE}-forgejo-response.txt
 
 Calculate average
@@ -82,7 +82,7 @@ sysbench memory --memory-total-size=10G --memory-oper=write run > ${DATE}-memory
 
 ### 5. Update Performance Benchmarks Document
 
-cd /mnt/data/git/system/architecture/metrics
+cd /mnt/data/git/srv-m1m/architecture/metrics
 nvim performance-benchmarks.md
 
 Update "Last Updated" date

@@ -6,7 +6,7 @@
 # Author       : user
 # Date         : 2025-11-22
 # Environment  : Fedora Asahi Remix 42 ARM64 (Apple Silicon)
-# Target System: system
+# Target System: srv-m1m
 #-------------------------------------------------------------------------------
 # Purpose      : Install zk (Zettelkasten note management CLI)
 # Binary Path  : /usr/local/bin/zk
@@ -28,7 +28,7 @@ ZK_VERSION="0.14.1"
 INSTALL_DIR="/usr/local/bin"
 BINARY_PATH="$INSTALL_DIR/zk"
 CONFIG_DIR="$HOME/.config/zk"
-TOOLKIT_ZK_DIR="/mnt/data/git/system/toolkit/editors/zk"
+TOOLKIT_ZK_DIR="/mnt/data/git/srv-m1m/toolkit/editors/zk"
 NOTEBOOK_DIR="/mnt/data/git/user-GNOSIS"
 DOWNLOAD_URL="https://github.com/zk-org/zk/releases/download/v${ZK_VERSION}/zk-${ZK_VERSION}-linux-arm64.tar.gz"
 TEMP_DIR="/tmp/zk-install"

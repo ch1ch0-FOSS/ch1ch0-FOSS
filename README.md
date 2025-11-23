@@ -1,4 +1,4 @@
-# system
+# srv-m1m
 
 **Production Fedora Asahi Infrastructure on Apple Silicon M1**
 
@@ -9,10 +9,10 @@ Self-hosted infrastructure with git-based configuration management, automated di
 ## Quick Start
 
 Clone repository
-git clone http://localhost:PORT/user/system.git /mnt/data/git/system
+git clone http://localhost:3000/user/srv-m1m.git /mnt/data/git/srv-m1m
 
 Restore dotfiles (see RUNBOOK.md for full procedure)
-cd /mnt/data/git/system
+cd /mnt/data/git/srv-m1m
 ./scripts/restore-symlinks.sh
 
 
@@ -26,7 +26,7 @@ cd /mnt/data/git/system
 
 ## Repository Structure
 
-system/
+srv-m1m/
 ├── architecture/ # System architecture and design decisions
 ├── automation/ # Disaster recovery and provisioning scripts
 ├── documentation/ # Runbooks, guides, and reference documentation
@@ -71,6 +71,6 @@ MIT License - See [LICENSE](LICENSE) file for details.
 
 ## Maintainer
 
-user - Fedora Asahi system infrastructure
+user - Fedora Asahi srv-m1m infrastructure
 
 

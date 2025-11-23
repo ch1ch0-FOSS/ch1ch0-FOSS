@@ -3,7 +3,7 @@
 
 **Date:** 2025-11-19  
 **Maintainer:** user  
-**System:** fa-system (Fedora Asahi - Apple Silicon M1)  
+**System:** fa-srv-m1m (Fedora Asahi - Apple Silicon M1)  
 **Status:** Production-Ready (Reference Documentation Complete)  
 **Last Updated:** 2025-11-19 12:30 PM EST
 
@@ -61,7 +61,7 @@ Complete infrastructure documentation with:
 
 /mnt/data/              (7.3TB portable SSD)
 ├── git/                (Version-controlled configs + repos)
-│   ├── fa-system/config/        → System config (source of truth)
+│   ├── fa-srv-m1m/config/        → System config (source of truth)
 │   │   ├── nvim/
 │   │   ├── tmux/
 │   │   ├── foot/
@@ -101,7 +101,7 @@ Complete infrastructure documentation with:
 ### Complete Tool Reference Guides
 
 All reference guides stored in:  
-`/mnt/data/git/fa-system/config/{tool}/`
+`/mnt/data/git/fa-srv-m1m/config/{tool}/`
 
 | Tool | Reference File | Alias | Status |
 |------|----------------|-------|--------|
@@ -121,16 +121,16 @@ All reference guides stored in:
 **Aliases in `~/.zshrc`:**
 ```
 
-alias nvimref='nvim /mnt/data/git/fa-system/config/nvim/NVIM-REFERENCE.md'
-alias tmuxref='nvim /mnt/data/git/fa-system/config/tmux/TMUX-REFERENCE.md'
-alias footref='nvim /mnt/data/git/fa-system/config/foot/FOOT-REFERENCE.md'
-alias zkref='nvim /mnt/data/git/fa-system/config/zk/ZK-REFERENCE.md'
-alias gitref='nvim /mnt/data/git/fa-system/config/git/GIT-REFERENCE.md'
-alias vimbref='nvim /mnt/data/git/fa-system/config/vimb/VIMB-REFERENCE.md'
-alias zshref='nvim /mnt/data/git/fa-system/config/zsh/ZSH-REFERENCE.md'
-alias bashref='nvim /mnt/data/git/fa-system/config/bash/BASH-REFERENCE.md'
-alias lgref='nvim /mnt/data/git/fa-system/config/lazygit/LAZYGIT-REFERENCE.md'
-alias swayref='nvim /mnt/data/git/fa-system/config/sway/SWAY-REFERENCE.md'
+alias nvimref='nvim /mnt/data/git/fa-srv-m1m/config/nvim/NVIM-REFERENCE.md'
+alias tmuxref='nvim /mnt/data/git/fa-srv-m1m/config/tmux/TMUX-REFERENCE.md'
+alias footref='nvim /mnt/data/git/fa-srv-m1m/config/foot/FOOT-REFERENCE.md'
+alias zkref='nvim /mnt/data/git/fa-srv-m1m/config/zk/ZK-REFERENCE.md'
+alias gitref='nvim /mnt/data/git/fa-srv-m1m/config/git/GIT-REFERENCE.md'
+alias vimbref='nvim /mnt/data/git/fa-srv-m1m/config/vimb/VIMB-REFERENCE.md'
+alias zshref='nvim /mnt/data/git/fa-srv-m1m/config/zsh/ZSH-REFERENCE.md'
+alias bashref='nvim /mnt/data/git/fa-srv-m1m/config/bash/BASH-REFERENCE.md'
+alias lgref='nvim /mnt/data/git/fa-srv-m1m/config/lazygit/LAZYGIT-REFERENCE.md'
+alias swayref='nvim /mnt/data/git/fa-srv-m1m/config/sway/SWAY-REFERENCE.md'
 
 ```
 
@@ -221,12 +221,12 @@ chsh -s /usr/bin/zsh
 ### Config Location
 
 **Source of truth:**  
-`/mnt/data/git/fa-system/config/zsh/.zshrc`
+`/mnt/data/git/fa-srv-m1m/config/zsh/.zshrc`
 
 **Symlink:**
 ```
 
-~/.zshrc → /mnt/data/git/fa-system/config/zsh/.zshrc
+~/.zshrc → /mnt/data/git/fa-srv-m1m/config/zsh/.zshrc
 
 ```
 
@@ -269,7 +269,7 @@ alias zklm='zk list --tag moc'
 
 ```
 
-/mnt/data/git/fa-system/config/nvim/
+/mnt/data/git/fa-srv-m1m/config/nvim/
 ├── init.lua
 ├── lazy-lock.json
 ├── NVIM-REFERENCE.md ✨
@@ -290,7 +290,7 @@ alias zklm='zk list --tag moc'
 ### Symlink
 ```
 
-~/.config/nvim → /mnt/data/git/fa-system/config/nvim
+~/.config/nvim → /mnt/data/git/fa-srv-m1m/config/nvim
 
 ```
 
@@ -354,7 +354,7 @@ alias zklm='zk list --tag moc'
 ### Templates (Updated v6.0)
 
 **Location:**  
-`/mnt/data/git/fa-system/config/zk/zk/templates/`
+`/mnt/data/git/fa-srv-m1m/config/zk/zk/templates/`
 
 **All templates use `{{format-date now}}`** ✨ (not `{{date}}`)
 
@@ -422,13 +422,13 @@ git push
 ### Config Location
 
 **Source of truth:**  
-`/mnt/data/git/fa-system/config/tmux/tmux.conf`
+`/mnt/data/git/fa-srv-m1m/config/tmux/tmux.conf`
 
 **Symlinks:**
 ```
 
-~/.config/tmux/tmux.conf → /mnt/data/git/fa-system/config/tmux/tmux.conf
-~/.tmux.conf → /mnt/data/git/fa-system/config/tmux/tmux.conf
+~/.config/tmux/tmux.conf → /mnt/data/git/fa-srv-m1m/config/tmux/tmux.conf
+~/.tmux.conf → /mnt/data/git/fa-srv-m1m/config/tmux/tmux.conf
 
 ```
 
@@ -497,7 +497,7 @@ See `TMUX-REFERENCE.md` for complete documentation.
 ```
 
 /mnt/data/git/
-├── fa-system/config/              (Source of truth)
+├── fa-srv-m1m/config/              (Source of truth)
 │   ├── nvim/
 │   ├── tmux/
 │   ├── foot/
@@ -520,13 +520,13 @@ See `TMUX-REFERENCE.md` for complete documentation.
 **All configs symlinked:**
 ```
 
-~/.config/nvim → /mnt/data/git/fa-system/config/nvim
-~/.config/tmux → /mnt/data/git/fa-system/config/tmux
-~/.config/foot → /mnt/data/git/fa-system/config/foot
-~/.config/sway → /mnt/data/git/fa-system/config/sway
-~/.config/zk → /mnt/data/git/fa-system/config/zk
-~/.config/vimb → /mnt/data/git/fa-system/config/vimb
-~/.zshrc → /mnt/data/git/fa-system/config/zsh/.zshrc
+~/.config/nvim → /mnt/data/git/fa-srv-m1m/config/nvim
+~/.config/tmux → /mnt/data/git/fa-srv-m1m/config/tmux
+~/.config/foot → /mnt/data/git/fa-srv-m1m/config/foot
+~/.config/sway → /mnt/data/git/fa-srv-m1m/config/sway
+~/.config/zk → /mnt/data/git/fa-srv-m1m/config/zk
+~/.config/vimb → /mnt/data/git/fa-srv-m1m/config/vimb
+~/.zshrc → /mnt/data/git/fa-srv-m1m/config/zsh/.zshrc
 
 ```
 
@@ -557,6 +557,122 @@ systemctl --user status forgejo
 journalctl --user -u forgejo -n 50
 
 ```
+---
+## 10.5 Public Repository Synchronization (NEW v6.1)
+
+**Purpose**: Maintain sanitized public GitHub portfolio while developing in private Forgejo.
+
+### Architecture
+
+Private Development (Forgejo) Public Portfolio (GitHub)
+┌─────────────────────────┐ ┌──────────────────────┐
+│ srv-m1m repository │ │ user-FOSS │
+│ localhost:3000/user │ ──sync──> │ github.com/user │
+│ │ │ │
+│ - Full credentials │ │ - Sanitized paths │
+│ - Local hostnames │ │ - Generic users │
+│ - Service configs │ │ - No secrets │
+│ - Private workflows │ │ - Professional docs │
+└─────────────────────────┘ └──────────────────────┘
+
+
+### Sanitization Script
+
+**Location**: `/automation/deployment/sync-to-public-v2.sh`
+
+**What it removes**:
+- Sensitive directories: `secrets/`, `keys/`, `certs/`, `backups/`, `credentials/`, `private/`
+- Cryptographic material: `*.key`, `*.pem`, `*.p12`, `*.pfx`, `*_rsa`, `*_dsa`, `*_ecdsa`, `*_ed25519`
+- Environment files: `*.env`, `*.env.local`, `.env.*`
+- Node artifacts: `node_modules/`
+
+**What it sanitizes**:
+- Personal paths: `/home/user` → `/home/user`
+- Hostnames: `user@system` → `user@system`
+- Service URLs: `system.local` → `system.local`
+- Local ports: `localhost:3000` → `localhost:PORT`
+
+### Sync Workflow
+
+
+. Ensure private repo is committed and pushed
+cd /mnt/data/git/srv-m1m
+git status # Should be clean
+git push origin master
+
+2. Execute sanitization and sync
+/mnt/data/git/srv-m1m/automation/deployment/sync-to-public-v2.sh
+
+Output shows:
+- Cloning to temporary directory
+- Removing sensitive files (count displayed)
+- Sanitizing paths (replacements shown)
+- Copying to public repository
+3. Review changes in public repo
+cd /mnt/data/git/user-FOSS
+git status
+git diff HEAD
+
+4. Commit and push to both remotes
+git add -A
+git commit -m "sync: sanitized update from srv-m1m $(date +%Y-%m-%d)"
+git push origin main # Forgejo mirror
+git push github main # GitHub public
+
+
+### Repository Structure
+
+**Public repo location**: `/mnt/data/git/user-FOSS`
+
+**Dual remotes**:
+
+origin http://localhost:3000/user/user-foss.git # Forgejo (staging)
+github https://github.com/user-FOSS/user-FOSS.git # GitHub (public)
+
+
+### GitHub Authentication
+
+**Token management**: Stored in `/mnt/data/PAT-tokens/github-PAT-sync-v2.md` (600 permissions)
+
+**Current token**: Expires 2025-12-23 (30-day rotation policy)
+
+**Scopes required**: `repo`, `workflow`, `read:org`
+
+**Setup**:
+
+Authenticate GitHub CLI
+echo "<token>" | gh auth login --with-token
+gh auth status
+
+Configure git to use gh CLI credentials
+gh auth setup-git
+
+
+### Verification Checklist
+
+After each sync:
+
+- [ ] **No sensitive data leaked**:
+
+cd /mnt/data/git/user-FOSS
+grep -r "user@system" . 2>/dev/null | wc -l # Should be 0
+grep -r "srv-m1m" --include=".md" --include=".sh" . 2>/dev/null | wc -l # Should be 0
+grep -r "localhost:3000" . 2>/dev/null | wc -l # Should be 0
+
+
+- [ ] **Both remotes synchronized**:
+
+cd /mnt/data/git/user-FOSS
+git log origin/main --oneline -1
+git log github/main --oneline -1
+
+Should show identical commit hash
+
+- [ ] **GitHub visible**:
+
+gh repo view user-FOSS/user-FOSS --web
+
+Opens browser to verify content
 
 ---
 
@@ -602,7 +718,7 @@ export PATH="$PATH:$GOPATH/bin"
 ```
 
 /mnt/data/git/
-├── fa-system/config/ ← SOURCE OF TRUTH
+├── fa-srv-m1m/config/ ← SOURCE OF TRUTH
 ├── user-GNOSIS/     ← Zettelkasten
 └── user-FOSS/       ← Portfolio
 
@@ -820,8 +936,8 @@ Prefix+hjkl - tmux panes
 ```
 
 /mnt/data/git/user-GNOSIS/              - Knowledge base
-/mnt/data/git/fa-system/config/          - System configs
-/mnt/data/git/fa-system/config/*/REF*    - Reference guides ✨
+/mnt/data/git/fa-srv-m1m/config/          - System configs
+/mnt/data/git/fa-srv-m1m/config/*/REF*    - Reference guides ✨
 ~/.config/                                 - Symlinks
 
 ```

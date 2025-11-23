@@ -3,7 +3,7 @@
 ## Overview
 
 Production Linux infrastructure on Fedora Asahi M1 with <20-minute disaster recovery.
-All system configurations are managed via `/mnt/data/git/system/toolkit/` and symlinked into home directory.
+All system configurations are managed via `/mnt/data/git/srv-m1m/toolkit/` and symlinked into home directory.
 
 ## Daily Operations
 
@@ -18,7 +18,7 @@ alias zkf # Should resolve to: zk new --template fleeting.md
 
 ### Configuration Management
 
-All personal configs are in `/mnt/data/git/system/toolkit/` and symlinked to:
+All personal configs are in `/mnt/data/git/srv-m1m/toolkit/` and symlinked to:
 
 - `~/.zshrc`, `~/.bashrc` → shell configs
 - `~/.config/nvim/` → Neovim editor
@@ -79,7 +79,7 @@ toolkit/window-manager/
 
 ### Step 1: Verify Source Toolkit Exists
 
-ls -la /mnt/data/git/system/toolkit/
+ls -la /mnt/data/git/srv-m1m/toolkit/
 
 Should contain: editors, shell, terminal, terminal-ui, window-manager
 
@@ -92,50 +92,50 @@ find ~ -xtype l -delete
 ### Step 3: Recreate All Symlinks
 
 **Shell configs:**
-ln -sf /mnt/data/git/system/toolkit/shell/.zshrc ~/.zshrc
-ln -sf /mnt/data/git/system/toolkit/shell/.bashrc ~/.bashrc
-ln -sf /mnt/data/git/system/toolkit/shell/.zshenv ~/.zshenv
-ln -sf /mnt/data/git/system/toolkit/shell/.bash_profile ~/.bash_profile
-ln -sf /mnt/data/git/system/toolkit/shell/gitconfig ~/.gitconfig
+ln -sf /mnt/data/git/srv-m1m/toolkit/shell/.zshrc ~/.zshrc
+ln -sf /mnt/data/git/srv-m1m/toolkit/shell/.bashrc ~/.bashrc
+ln -sf /mnt/data/git/srv-m1m/toolkit/shell/.zshenv ~/.zshenv
+ln -sf /mnt/data/git/srv-m1m/toolkit/shell/.bash_profile ~/.bash_profile
+ln -sf /mnt/data/git/srv-m1m/toolkit/shell/gitconfig ~/.gitconfig
 
 **Neovim:**
 mkdir -p ~/.config
-ln -sf /mnt/data/git/system/toolkit/editors/nvim ~/.config/nvim
+ln -sf /mnt/data/git/srv-m1m/toolkit/editors/nvim ~/.config/nvim
 
 **Zettelkasten:**
 mkdir -p ~/.config/zk
-ln -sf /mnt/data/git/system/toolkit/editors/zk/config.toml ~/.config/zk/config.toml
-ln -sf /mnt/data/git/system/toolkit/editors/zk/templates ~/.config/zk/templates
+ln -sf /mnt/data/git/srv-m1m/toolkit/editors/zk/config.toml ~/.config/zk/config.toml
+ln -sf /mnt/data/git/srv-m1m/toolkit/editors/zk/templates ~/.config/zk/templates
 
 **Tmux:**
-ln -sf /mnt/data/git/system/toolkit/terminal/tmux/.tmux.conf ~/.tmux.conf
+ln -sf /mnt/data/git/srv-m1m/toolkit/terminal/tmux/.tmux.conf ~/.tmux.conf
 
 **Foot terminal:**
 mkdir -p ~/.config/foot
-ln -sf /mnt/data/git/system/toolkit/terminal/foot/foot.ini ~/.config/foot/foot.ini
+ln -sf /mnt/data/git/srv-m1m/toolkit/terminal/foot/foot.ini ~/.config/foot/foot.ini
 
 **Fuzzel launcher:**
 mkdir -p ~/.config/fuzzel
-ln -sf /mnt/data/git/system/toolkit/terminal-ui/fuzzel/fuzzel.ini ~/.config/fuzzel/fuzzel.ini
+ln -sf /mnt/data/git/srv-m1m/toolkit/terminal-ui/fuzzel/fuzzel.ini ~/.config/fuzzel/fuzzel.ini
 
 **Lazygit:**
 mkdir -p ~/.config/lazygit
-ln -sf /mnt/data/git/system/toolkit/terminal-ui/lazygit/config.yml ~/.config/lazygit/config.yml
+ln -sf /mnt/data/git/srv-m1m/toolkit/terminal-ui/lazygit/config.yml ~/.config/lazygit/config.yml
 
 **Vimb browser:**
 mkdir -p ~/.config/vimb
-ln -sf /mnt/data/git/system/toolkit/terminal-ui/vimb/config ~/.config/vimb/config
+ln -sf /mnt/data/git/srv-m1m/toolkit/terminal-ui/vimb/config ~/.config/vimb/config
 
 **Sway window manager:**
 mkdir -p ~/.config/sway
-ln -sf /mnt/data/git/system/toolkit/window-manager/config ~/.config/sway/config
-ln -sf /mnt/data/git/system/toolkit/window-manager/colors.conf ~/.config/sway/colors.conf
+ln -sf /mnt/data/git/srv-m1m/toolkit/window-manager/config ~/.config/sway/config
+ln -sf /mnt/data/git/srv-m1m/toolkit/window-manager/colors.conf ~/.config/sway/colors.conf
 
 ### Step 4: Verify All Symlinks
 
-find ~ -type l -ls | grep system
+find ~ -type l -ls | grep srv-m1m
 
-Should show ~18 symlinks, all pointing to `/mnt/data/git/system/toolkit/`
+Should show ~18 symlinks, all pointing to `/mnt/data/git/srv-m1m/toolkit/`
 
 ### Step 5: Restart Shell and Applications
 
@@ -163,7 +163,7 @@ zk list # Should connect to Zettelkasten
 
 All changes must use conventional commits (enforced by commitlint):
 
-cd /mnt/data/git/system
+cd /mnt/data/git/srv-m1m
 git status
 git add toolkit/shell/.zshrc
 git commit -m "feat: add new shell alias"
@@ -173,13 +173,13 @@ Valid commit types: `feat`, `fix`, `docs`, `chore`, `refactor`, `style`, `test`,
 
 ### Syncing Across Systems
 
-Changes pushed to Forgejo (localhost:PORT) are immediately available to pull on other systems.
+Changes pushed to Forgejo (localhost:3000) are immediately available to pull on other systems.
 
 ## Service Management
 
 ### Core Services
 
-- **Forgejo** (Git server): `http://localhost:PORT`
+- **Forgejo** (Git server): `http://localhost:3000`
 - **Vaultwarden** (Password manager): `http://localhost:8222`
 - **Syncthing** (File sync): `http://localhost:8384`
 - **Ollama** (LLM): `http://localhost:11434`
@@ -200,7 +200,7 @@ journalctl -u forgejo -f
 ### Automated Backups
 
 Forgejo backup script runs daily via cron:
-/mnt/data/git/system/infrastructure/services/forgejo/scripts/backup_forgejo.sh
+/mnt/data/git/srv-m1m/infrastructure/services/forgejo/scripts/backup_forgejo.sh
 
 Backups stored in `/mnt/data/backups/forgejo/`
 
@@ -229,7 +229,7 @@ find ~ -xtype l -delete
 Clear credential cache
 git credential reject << EOF
 protocol=http
-host=localhost:PORT
+host=localhost:3000
 EOF
 
 Re-authenticate on next push
@@ -248,7 +248,7 @@ ls -la /etc/service-name/
 
 ## Related Documentation
 
-- **Architecture:** `/mnt/data/git/system/architecture/ARCHITECTURE.md`
-- **Disaster Recovery:** `/mnt/data/git/system/automation/disaster-recovery/disaster-recovery.md`
-- **System Setup:** `/mnt/data/git/system/documentation/SYSTEM-SETUPv6.0.md`
-- **Tool References:** `/mnt/data/git/system/documentation/guides/*REFERENCE.md`
+- **Architecture:** `/mnt/data/git/srv-m1m/architecture/ARCHITECTURE.md`
+- **Disaster Recovery:** `/mnt/data/git/srv-m1m/automation/disaster-recovery/disaster-recovery.md`
+- **System Setup:** `/mnt/data/git/srv-m1m/documentation/SYSTEM-SETUPv6.0.md`
+- **Tool References:** `/mnt/data/git/srv-m1m/documentation/guides/*REFERENCE.md`
