@@ -1,0 +1,37 @@
+# ~/.config/lazygit/config.yml
+# Fedora Asahi | Vi-keybindings universal | ncurses theme
+
+keybinding:
+  universal:
+    # Navigation (vi-like)
+    prevItem: 'k'
+    nextItem: 'j'
+    prevPage: 'K'
+    nextPage: 'J'
+    gotoTop: 'g'
+    gotoBottom: 'G'
+    # Selection/Actions
+    select: 'v'
+    confirm: 'y'
+    return: '<esc>'
+    quit: 'q'
+    # Search
+    openSearch: '/'
+gui:
+  theme:
+    activeBorderColor:
+      - green
+      - bold
+    inactiveBorderColor:
+      - white
+    selectedLineBgColor:
+      - reverse
+    selectedRangeBgColor:
+      - reverse
+  showFileTree: true
+  showRandomTip: false
+git:
+  pagers:
+    - colorArg: always
+notARepository: 'skip'
+promptToReturnFromSubprocess: false

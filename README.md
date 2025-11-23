@@ -1,44 +1,76 @@
-# ch1ch0-FOSS | Professional Infrastructure Portfolio
+# system
 
-**Self-taught Systems Engineer** specializing in production Linux infrastructure, disaster recovery, and terminal-first development.
+**Production Fedora Asahi Infrastructure on Apple Silicon M1**
 
-## Featured Work
-
-### [Infrastructure](./infrastructure/)
-**Production-grade Fedora Asahi setup with <20-minute disaster recovery.**
-
-- **System Design:** Apple Silicon M1 Mac Mini, Fedora Asahi Linux
-- **Services:** PostgreSQL, Forgejo (git), Vaultwarden (password manager), Syncthing (file sync)
-- **Capability:** Sub-20min tested recovery from total system failure
-- **Skills:** Linux administration, PostgreSQL, systemd, disaster recovery engineering
-
-### [Tooling](./tooling/)
-**Vi-universal keybindings across all terminal tools for consistent muscle memory.**
-
-- **Editors:** Neovim with Lua configuration
-- **Multiplexing:** Tmux with Vi-like navigation
-- **Shell:** Zsh with custom functions and aliases
-- **Window Manager:** Sway (Wayland) with custom keybindings
-- **Terminal UI:** Lazygit, Fuzzel, Vimb
-- **Philosophy:** One keybinding scheme across all tools = portable productivity
-
-### [Projects](./projects/)
-Proof-of-concept work in AI automation, quantitative research, home lab.
-
-## Demonstrated Skills
-
-| Category | Skills |
-|----------|--------|
-| **Infrastructure** | Linux (Fedora, systemd), PostgreSQL, Disaster Recovery, Backup Automation, Monitoring |
-| **DevOps** | Git-based configuration, Service management, Backup/restore procedures, SRE mindset |
-| **Tooling** | Neovim, Tmux, Zsh, Sway, Vi keybindings, Terminal mastery |
-| **Documentation** | Architecture diagrams, Runbooks, Operational procedures, Technical writing |
-| **Automation** | Bash scripting, Ansible, Backup automation, Testing procedures |
-
-## Contact & Links
-- **Email:** ch1ch0@ch1ch0-FOSS.me
-- **Website:** https://ch1ch0-FOSS.me
-- **Forgejo (Private):** http://code.ch1ch0-FOSS.me
+Self-hosted infrastructure with git-based configuration management, automated disaster recovery, and terminal-first workflow. All system configurations version-controlled and reproducible.
 
 ---
-*All infrastructure is documented, tested, and maintained to production standards.*
+
+## Quick Start
+
+Clone repository
+git clone http://localhost:PORT/user/system.git /mnt/data/git/system
+
+Restore dotfiles (see RUNBOOK.md for full procedure)
+cd /mnt/data/git/system
+./scripts/restore-symlinks.sh
+
+
+## Core Capabilities
+
+- **<20-minute disaster recovery**: Complete system restoration from git repository
+- **Git-based configuration**: All dotfiles, service configs, and scripts version-controlled
+- **Self-hosted services**: Forgejo (git), Vaultwarden (passwords), Syncthing (files), Ollama (LLM)
+- **Terminal-first workflow**: Vi-style keybindings unified across all tools
+- **Automated backups**: Daily service snapshots to external storage
+
+## Repository Structure
+
+system/
+├── architecture/ # System architecture and design decisions
+├── automation/ # Disaster recovery and provisioning scripts
+├── documentation/ # Runbooks, guides, and reference documentation
+├── infrastructure/ # Service configurations and deployment
+└── toolkit/ # Dotfiles and configuration templates
+├── shell/ # Zsh/Bash configs, aliases, functions
+├── editors/ # Neovim, zk (Zettelkasten)
+├── terminal/ # Foot, tmux
+├── terminal-ui/ # Fuzzel, lazygit, vimb
+└── window-manager/ # Sway configuration
+
+
+## Documentation
+
+- **[ARCHITECTURE.md](architecture/ARCHITECTURE.md)**: System design and capabilities
+- **[RUNBOOK.md](documentation/RUNBOOK.md)**: Daily operations and disaster recovery
+- **[SYSTEM-SETUPv6.0.md](documentation/SYSTEM-SETUPv6.0.md)**: Complete setup guide
+- **[Tool References](documentation/guides/)**: Keybinding cheatsheets for all tools
+
+## Services
+
+| Service      | Port  | Purpose                     | Data Location              |
+|--------------|-------|-----------------------------|----------------------------|
+| Forgejo      | 3000  | Private git server          | /mnt/data/srv/forgejo      |
+| Vaultwarden  | 8222  | Password manager            | /mnt/data/srv/vaultwarden  |
+| Syncthing    | 8384  | File synchronization        | /mnt/data/srv/syncthing    |
+| Ollama       | 11434 | Local LLM inference         | /mnt/data/srv/ollama       |
+
+## System Requirements
+
+- Fedora Asahi Linux (ARM64) on Apple Silicon M1/M2
+- External SSD mounted at `/mnt/data` (recommended 1TB+)
+- Git, systemd, and basic development tools
+
+## Installation
+
+See [fedora-asahi-minimal-install.md](fedora-asahi-minimal-install.md) for initial OS setup, then follow [SYSTEM-SETUPv6.0.md](documentation/SYSTEM-SETUPv6.0.md) for complete system configuration.
+
+## License
+
+MIT License - See [LICENSE](LICENSE) file for details.
+
+## Maintainer
+
+user - Fedora Asahi system infrastructure
+
+

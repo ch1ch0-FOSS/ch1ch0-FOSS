@@ -1,0 +1,12 @@
+origin	http://localhost:PORT/user/system.git (fetch)
+origin	http://localhost:PORT/user/system.git (push)
+179f42a docs(legacy): removed install doc not reflection of current system
+6397666 docs(architecture): finalize metrics runbook and fix diagram typo
+f698dc4 docs(architecture): added system architecture docs
+206ac58 docs(README): adjusted architecture README for capablities focus
+15b6dcf docs(diagrams): add architecture diagrams for network, storage, and services
+5e8af37 docs(architecture): add ADR-003 git-backed configuration decision record
+fa5501b docs(automation): updated docs and .sh for proper automation
+e1e5639 docs: revamp readme for system repo
+d4c5ce3 docs: consolidate architecture into ARCHITECTURE.md
+58b4277 refactor: remove empty CONFIGURATION.md placeholder

@@ -1,0 +1,20 @@
+set dark-mode=on
+set status-bar-show-settings=true
+set smooth-scrolling=true
+set default-font=monospace
+set monospace-font-size=12
+set font-size=14
+set strict-ssl=true
+set cookie-accept=origin
+set webgl=false
+set geolocation=ask
+set notification=ask
+set header=DNT=1
+set download-path=~/Downloads
+set prevent-newwindow=true
+set editor-command=foot -e nvim %s
+set home-page=https://start.duckduckgo.com
+set hint-keys=asdfghjkl
+set hint-timeout=5000
+set hint-follow-last=true
+

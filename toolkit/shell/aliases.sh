@@ -1,32 +1,5 @@
-#!/bin/zsh#!/bin/zsh
-HISTFILE=~/.zsh_history
-HISTSIZE=10000
-SAVEHIST=10000
-setopt HIST_IGNORE_ALL_DUPS SHARE_HISTORY APPEND_HISTORY
-setopt PROMPT_SUBST
-
-autoload -Uz vcs_info
-precmd_functions+=(vcs_info)
-zstyle ':vcs_info:git:*' formats '%F{2}(%b)%f '
-zstyle ':vcs_info:*' enable git
-
-function zle-line-init zle-keymap-select {
-  if [[ $KEYMAP == vicmd ]]; then
-    VI_MODE='%F{1}[N]%f'
-  else
-    VI_MODE='%F{2}[I]%f'
-  fi
-  zle reset-prompt
-}
-zle -N zle-line-init
-zle -N zle-keymap-select
-
-PROMPT='%F{2}%n@%m%f:%F{245}%~%f ${vcs_info_msg_0_}${VI_MODE} %# '
-bindkey -v
-
-autoload -U compinit && compinit
-export TERM=foot EDITOR=nvim VISUAL=nvim
-[ -n "$NVIM" ] && export GIT_EDITOR="nvr -cc split --remote-wait +'set bufhidden=wipe'" || export GIT_EDITOR="nvim"
+#!/bin/bash
+# === Shared Aliases (sourced by both bash and zsh) ===
 
 # Editor
 alias vi='nvim'
@@ -46,7 +19,7 @@ alias gco='git checkout'
 alias lg='lazygit'
 
 # Tmux
-alias tm='tmux new -As main'
+alias tm='tmux new -As master'
 alias tma='tmux attach -t'
 alias tmls='tmux ls'
 alias tmk='tmux kill-session -t'
@@ -55,6 +28,8 @@ alias tmk='tmux kill-session -t'
 alias ..='cd ..'
 alias ...='cd ../..'
 alias ....='cd ../../..'
+alias gno='cd /mnt/data/git/user-GNOSIS'
+alias work='cd /mnt/data/git'
 
 # Listing
 alias ls='ls --color=auto'
@@ -77,4 +52,21 @@ alias mkdir='mkdir -pv'
 # Network
 alias ports='netstat -tulanp'
 alias ping='ping -c 5'
+
+# Zk (Zettelkasten) note creation
+alias zkf='zk new --template fleeting.md'
+alias zkz='zk new --template zettel.md'
+alias zkp='zk new --template permanent.md'
+alias zkm='zk new --template moc.md'
+alias zkd='zk new --template decision.md'
+alias zkj='zk new --template project.md'
+alias zkr='zk new --template reference.md'
+
+# Zk search and list
+alias zkl='zk list'
+alias zks='zk list --interactive'
+alias zke='zk edit --interactive'
+alias zklf='zk list --tag fleeting'
+alias zklp='zk list --tag permanent'
+alias zklm='zk list --tag moc'
 

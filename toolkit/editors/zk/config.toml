@@ -1,0 +1,124 @@
+# zk configuration file
+# Managed in toolkit for portability
+# Symlinked to ~/.config/zk/config.toml
+
+# NOTEBOOK SETTINGS
+[notebook]
+dir = "/mnt/data/git/ch1ch0-GNOSIS"
+
+# NOTE SETTINGS
+[note]
+language = "en"
+default-title = "Untitled"
+filename = "{{id}}"
+extension = "md"
+template = "default.md"
+
+ignore = [
+    "drafts/*",
+    ".git/*",
+    ".zk/*"
+]
+
+id-charset = "alphanum"
+id-length = 4
+id-case = "lower"
+
+# EXTRA VARIABLES
+[extra]
+author = "ch1ch0"
+
+# GROUP OVERRIDES (matches shell aliases)
+
+# Fleeting notes: quick captures
+[group.fleeting]
+paths = ["fleeting"]
+[group.fleeting.note]
+filename = "{{format-date now '%Y%m%d%H%M%S'}}-fleeting"
+template = "fleeting.md"
+
+# Zettel notes: atomic ideas
+[group.zettel]
+paths = ["zettel"]
+[group.zettel.note]
+template = "zettel.md"
+
+# Permanent notes: evergreen knowledge
+[group.permanent]
+paths = ["permanent"]
+[group.permanent.note]
+template = "permanent.md"
+
+# MOC (Map of Content): index/hub notes
+[group.moc]
+paths = ["moc"]
+[group.moc.note]
+template = "moc.md"
+
+# Decision notes: choices and rationale
+[group.decision]
+paths = ["decision"]
+[group.decision.note]
+template = "decision.md"
+
+# Project notes: work documentation
+[group.project]
+paths = ["project"]
+[group.project.note]
+template = "project.md"
+
+# Reference notes: external sources
+[group.reference]
+paths = ["reference"]
+[group.reference.note]
+template = "reference.md"
+
+# MARKDOWN SETTINGS
+[format.markdown]
+link-format = "markdown"
+link-encode-path = true
+link-drop-extension = true
+hashtags = true
+colon-tags = false
+multiword-tags = true
+
+# EXTERNAL TOOLS
+[tool]
+editor = "nvim"
+pager = "less -FIRX"
+fzf-preview = "bat -p --color always {-1}"
+
+# LSP CONFIGURATION
+[lsp]
+
+[lsp.diagnostics]
+wiki-title = "hint"
+dead-link = "error"
+
+[lsp.completion]
+note-label = "{{title}}"
+note-filter-text = "{{title}}"
+note-detail = "{{filename-stem}}"
+
+# NAMED FILTERS
+[filter]
+recents = "--sort created- --created-after 'last two weeks'"
+today = "--created-after today"
+untagged = "--tag '' --orphan"
+
+# COMMAND ALIASES
+[alias]
+ls = "zk list $@"
+ll = "zk list --format full $@"
+edit = "zk edit --interactive $@"
+recent = "zk edit --sort created- --created-after 'last two weeks' --limit 15 --interactive"
+daily = "zk list --created-after today --format full"
+path = "zk list --quiet --format {{path}} --delimiter , $@"
+lucky = "zk list --quiet --format full --sort random --limit 1"
+hist = "zk list --format path --delimiter0 --quiet $@ | xargs -t -0 git log --patch --"
+conf = "nvim /mnt/data/git/srv-m1m/toolkit/editors/zk/config.toml"
+stats = "zk list --format '{{json .}}' | jq -r '.tags[]' | sort | uniq -c | sort -rn"
+orphans = "zk list --orphan $@"
+backlinks = "zk list --link-to $@"
+graph = "zk graph $@"
+

@@ -1,0 +1,15 @@
+[user]
+    name = ch1ch0
+    email = ch1ch0@duck.com
+
+[credential]
+    helper = store
+
+[core]
+    excludesfile = /mnt/data/git/srv-m1m/toolkit/shell/.gitignore_global
+
+[safe]
+    directory = /mnt/data/git/
+
+[commit]
+	template = /home/user/.gitmessage
