@@ -7,6 +7,9 @@ I design and operate **self-hosted, vendor-agnostic infrastructure** on bare met
 - Linux (Fedora / RHEL family) on ARM64
 - Git-centric workflows (Forgejo → mirrored to GitHub)
 - Agentic tooling (OpenCode + Beads) for reproducible automation
+- Ansible Development  (IaC)
+- Vi-Centric, Terminal first
+- Control-plane to Cattle Services/Data hub server 
 
 ---
 
