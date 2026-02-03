@@ -16,7 +16,7 @@ I design and operate **self-hosted, vendor-agnostic infrastructure** on bare met
 
 - PostgreSQL for data
 - Forgejo for Git + CI/CD entrypoint
-- Woodpecker CI for pipelines
+- Forgejo Actions for pipelines (Woodpecker CI as a potential shift later)
 - Prometheus + Grafana for observability
 - Vaultwarden for secrets
 - Local LLMs via Ollama (ARM64) for on-box AI assistance
