@@ -4,12 +4,13 @@ Production Infrastructure Architect • Linux SysAdmin • FOSS-First
 
 I design and operate **self-hosted, vendor-agnostic infrastructure** on bare metal and ARM64, with a focus on:
 
-- Linux (Fedora / RHEL family) on ARM64
+- Linux (Fedora / RHEL family) on X86_64 and ARM64
 - Git-centric workflows (Forgejo → mirrored to GitHub)
-- Agentic tooling (OpenCode + Beads) for reproducible automation
 - Ansible Development  (IaC)
 - Vi-Centric, Terminal first
 - Control-plane to Cattle Services/Data hub server 
+- Agentic tooling (OpenCode + Beads) for reproducible automation
+- Local LLM via DMR-Podman 
 
 ---
 
