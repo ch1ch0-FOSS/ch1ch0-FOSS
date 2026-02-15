@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ch1ch0-FOSS | Production Infrastructure Architect</title>
+    <style>
+        :root {
+            --bg: #0d1117;
+            --fg: #c9d1d9;
+            --accent: #58a6ff;
+            --muted: #8b949e;
+            --border: #30363d;
+        }
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif;
+            background: var(--bg);
+            color: var(--fg);
+            line-height: 1.6;
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 2rem;
+        }
+        h1, h2, h3 { color: #fff; }
+        a { color: var(--accent); text-decoration: none; }
+        a:hover { text-decoration: underline; }
+        .hero { text-align: center; padding: 3rem 0; border-bottom: 1px solid var(--border); }
+        .hero h1 { font-size: 2.5rem; margin-bottom: 0.5rem; }
+        .hero .tagline { color: var(--muted); font-size: 1.2rem; }
+        .section { padding: 2rem 0; border-bottom: 1px solid var(--border); }
+        .skills { display: flex; flex-wrap: wrap; gap: 0.5rem; }
+        .skill-tag {
+            background: var(--border);
+            padding: 0.25rem 0.75rem;
+            border-radius: 1rem;
+            font-size: 0.875rem;
+        }
+        .repo-list { list-style: none; padding: 0; }
+        .repo-list li { padding: 0.5rem 0; }
+        footer {
+            text-align: center;
+            padding: 2rem;
+            color: var(--muted);
+            font-size: 0.875rem;
+        }
+    </style>
+</head>
+<body>
+    <div class="hero">
+        <h1>ch1ch0-FOSS</h1>
+        <p class="tagline">Production Infrastructure Architect • Linux SysAdmin • FOSS-First</p>
+        <p>
+            <a href="https://github.com/ch1ch0-FOSS">GitHub</a> •
+            <a href="https://www.linkedin.com/in/chicho-foss-42b676165">LinkedIn</a> •
+            <a href="mailto:ch1ch0@duck.com">Email</a>
+        </p>
+    </div>
+
+    <div class="section">
+        <h2>About</h2>
+        <p>I design and operate <strong>self-hosted, vendor-agnostic infrastructure</strong> on bare metal and ARM64, with a focus on:</p>
+        <ul>
+            <li>Linux (Fedora / RHEL family) on X86_64 and ARM64</li>
+            <li>Git-centric workflows (Forgejo → mirrored to GitHub)</li>
+            <li>Ansible Development (IaC)</li>
+            <li>Vi-Centric, Terminal-first workflows</li>
+            <li>Control-plane to Cattle Services/Data hub architecture</li>
+            <li>Agentic tooling (OpenCode + Beads) for reproducible automation</li>
+            <li>Local LLM via DMR-Podman</li>
+        </ul>
+    </div>
+
+    <div class="section">
+        <h2>Current Stack</h2>
+        <p><strong>srv-m1m Asahi Stack</strong> (Apple M1, Fedora Asahi)</p>
+        <ul>
+            <li>PostgreSQL for data</li>
+            <li>Forgejo for Git + CI/CD</li>
+            <li>Prometheus + Grafana for observability</li>
+            <li>Vaultwarden for secrets</li>
+            <li>Local LLMs via DMR (Podman) for on-box AI assistance</li>
+        </ul>
+    </div>
+
+    <div class="section">
+        <h2>Skills</h2>
+        <div class="skills">
+            <span class="skill-tag">Linux (Fedora/RHEL)</span>
+            <span class="skill-tag">Ansible</span>
+            <span class="skill-tag">Git/Forgejo</span>
+            <span class="skill-tag">PostgreSQL</span>
+            <span class="skill-tag">Prometheus</span>
+            <span class="skill-tag">Grafana</span>
+            <span class="skill-tag">Podman</span>
+            <span class="skill-tag">ARM64</span>
+            <span class="skill-tag">Vi/Vim</span>
+            <span class="skill-tag">OpenCode</span>
+            <span class="skill-tag">Beads</span>
+            <span class="skill-tag">Local LLMs</span>
+        </div>
+    </div>
+
+    <div class="section">
+        <h2>Key Repositories</h2>
+        <ul class="repo-list">
+            <li><a href="https://github.com/ch1ch0-FOSS/srv-m1m-asahi">srv-m1m-asahi</a> — Single-node Apple M1 home lab + portfolio system</li>
+            <li><a href="https://github.com/ch1ch0-FOSS/ch1ch0-foss">ch1ch0-foss</a> — This landing page (mirrored from self-hosted Forgejo)</li>
+            <li><a href="https://github.com/ch1ch0-FOSS">GitHub Profile</a> — All public repos</li>
+        </ul>
+    </div>
+
+    <div class="section">
+        <h2>How I Work</h2>
+        <p><strong>Control plane</strong>: ThinkPad T480 (Ansible, OpenCode, Beads, vi-centric)</p>
+        <p><strong>Service/data hub</strong>: srv-m1m (databases, Git, monitoring, LLM services)</p>
+        <p><strong>Docs</strong>: ADRs, runbooks, and troubleshooting guides — written in Markdown, versioned in git</p>
+        <p>I avoid SaaS lock-in wherever possible and treat every system as something I must be able to <strong>operate, recover, and explain</strong> without external platforms.</p>
+    </div>
+
+    <footer>
+        <p>© 2026 ch1ch0-FOSS • <a href="https://github.com/ch1ch0-FOSS">View on GitHub</a></p>
+    </footer>
+</body>
+</html>
